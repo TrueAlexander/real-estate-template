@@ -1,52 +1,56 @@
-.best {
+.products {
     width: 100%;
-    margin: 4rem 0;
     text-align: center;
+    padding: 0 0 2rem;
 }
 
-.best > div {
+.products > div {
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
+    
 }
 
-.best > div p {
+.products > div p {
     margin: 1rem 2rem;
     font-size: 1.2rem;
+    
 }
 
 .bold {
     font-weight: 700;
 }
 
-.best .container {
+.products .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.2rem;
     padding: 1rem;
+    margin-bottom: 2.5rem;
 }
 
-.best img {
+.products img {
     width: 100%;
 }
 
 @media screen and (max-width:940px) {
-    .best {
+    .products {
         margin: 1rem 0;
     }
 
-    .best > div p {
+    .products > div p {
         margin: 1rem;
         font-size: 1rem;
     }
 
-    .best .container {
+    .products .container {
         grid-template-columns: 1fr;
         grid-gap: .5rem;
     }
 }
 
 @media screen and (max-width: 478px) {
-    .best > div p {
+    .products > div p {
         margin: 1rem .5rem;
     }
 }

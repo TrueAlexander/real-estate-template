@@ -1,15 +1,14 @@
 import React from 'react'
-
 import Apt1 from '../../assets/apt1.jpeg'
 import Apt2 from '../../assets/apt2.jpeg'
 import Apt3 from '../../assets/apt3.jpeg'
 
-import './Best.css'
+import './Products.css'
 
-const Best = () => {
+const Products = () => {
     return (
-        <div className='best'>
-            <h1>Nossos imoveis</h1>
+        <div className='products'>
+            <h1>Nossos imóveis</h1>
             <div>
                 <p><span className='bold'>Todos</span></p>
                 <p>Venda</p>
@@ -25,4 +24,4 @@ const Best = () => {
     )
 }
 
-export default Best
+export default Products

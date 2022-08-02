@@ -57,20 +57,30 @@
     text-indent: 40px;
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
+    cursor: pointer;
     
 }
 
 .search select:focus {
     outline: none;
+    cursor: pointer;
 }
 
 .search label {
     padding: 0 14px 0 8px;
+    
+   
 }
 
 .search .radio {
+    cursor: pointer;
     display: flex;
     align-items: center;
+    
+}
+
+.search .radio input {
+    cursor: pointer;   
 }
 
 .search button {
@@ -80,6 +90,12 @@
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.search button:active {
+    transform: translate(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0, 0.2);
+    border-bottom: none;
 }
 
 @media screen and (max-width: 940px) {

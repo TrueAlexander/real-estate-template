@@ -1,6 +1,6 @@
 import React from 'react'
 import Featured from './../components/featured/Featured'
-import Best from './../components/best/Best'
+
 import Home from './../components/home/Home'
 
 
@@ -9,7 +9,7 @@ const ProductPage = () => {
     <>
       IMOVEIS
       <Home />
-      <Best />
+     
       <Featured />
     </>
   )
