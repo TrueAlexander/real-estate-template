@@ -57,7 +57,7 @@ const Featured = () => {
             </div>
 
         {/* Section section */}
-        <div className='container'>
+            <div className='container'>
                 <img className='order-2' src={Bed3} alt='' />
                 <img className='order-3' src={Bed4} alt='' />
 
