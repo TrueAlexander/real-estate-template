@@ -83,7 +83,7 @@
     cursor: pointer;   
 }
 
-.search button {
+.search .btn {
     background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
     border: 1px solid #5651e5;
     color: #fff;

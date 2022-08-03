@@ -1,16 +1,16 @@
 import React from 'react'
-import Featured from './../components/featured/Featured'
+import PropertyItem from '../components/propertyItem/PropertyItem'
+import ProductHead from '../components/productHead/ProductHead'
 
-import Home from './../components/home/Home'
 
 
 const ProductPage = () => {
   return (
     <>
-      IMOVEIS
-      <Home />
-     
-      <Featured />
+      <ProductHead />
+      <PropertyItem />
+      <PropertyItem />
+      <PropertyItem />
     </>
   )
 }

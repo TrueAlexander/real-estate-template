@@ -2,6 +2,8 @@ import React from 'react'
 import Apt1 from '../../assets/apt1.jpeg'
 import Apt2 from '../../assets/apt2.jpeg'
 import Apt3 from '../../assets/apt3.jpeg'
+import {Link} from 'react-router-dom'
+import ProductPage from '../../pages/ProductPage'
 
 import './Products.css'
 
@@ -19,7 +21,12 @@ const Products = () => {
                 <img src={Apt2} alt='' />
                 <img src={Apt3} alt='' />
             </div>
-            <button className='btn'>Mostrar</button>
+            <Link 
+                className='btn'
+                to='/imoveis'
+            >
+                Mostrar
+            </Link>
         </div>
     )
 }

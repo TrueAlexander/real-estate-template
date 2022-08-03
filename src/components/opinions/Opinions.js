@@ -15,17 +15,30 @@ const Opinions = () => {
       <Swiper
         className="slider"
         modules={[Navigation, Pagination]}
-        spaceBetween={50}
+        spaceBetween={0}
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 2,
+          },
+        }}
         slidesPerView={3}
+        loop={true}
         navigation
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true, dynamicBullets: true, }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              Parceria é a palavra chave para Falar de Maria Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço "
+              "Parceria é a palavra chave para Falar de Maria Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
             </p>
             <p className="bold">
             José Rocha - Proprietário
@@ -35,7 +48,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Maria. Tudo perfeito ! Voltaremos! "
+              "Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Maria. Tudo perfeito ! Voltaremos!"
             </p>
             <p className="bold">
               Ana Pinho - Temporada
@@ -45,7 +58,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Compramos nosso primeiro apartamento com Maria. Não tivemos nenhum problema. Atendimento Impecável.
+              "Compramos nosso primeiro apartamento com Maria. Não tivemos nenhum problema. Atendimento Impecável"
             </p>
             <p className="bold">
               Vania Lopes - Compra
@@ -55,7 +68,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              Parceria é a palavra chave para Falar de Maria Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço "
+              "Parceria é a palavra chave para Falar de Maria Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
             </p>
             <p className="bold">
               José Rocha - Proprietário
@@ -65,7 +78,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Maria. Tudo perfeito ! Voltaremos! "
+              "Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Maria. Tudo perfeito ! Voltaremos!"
             </p>
             <p className="bold">
               Ana Pinho - Temporada
@@ -75,7 +88,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Compramos nosso primeiro apartamento com Maria. Não tivemos nenhum problema. Atendimento Impecável.
+              "Compramos nosso primeiro apartamento com Maria. Não tivemos nenhum problema. Atendimento Impecável"
             </p>
             <p className="bold">
               Vania Lopes - Compra

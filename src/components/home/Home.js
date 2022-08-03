@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
+import {Link} from 'react-router-dom'
 
 import './Home.css'
 
@@ -25,7 +26,7 @@ const Home = () => {
                         </select>
                         {/* <input type='text' placeholder='O que você procura..' /> */}
                     </div>
-                    <button type='submit'><AiOutlineSearch className='icon'/></button>
+                    <Link to='/imoveis' className='btn'><AiOutlineSearch className='icon'/></Link>
                 </form>
             </div>
         </div>
