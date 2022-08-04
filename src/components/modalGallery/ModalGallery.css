@@ -6,13 +6,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  color: red;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: 0.5s;
   pointer-events: none;
+  text-align: center;
 }
 
 .modal.active {
@@ -27,13 +27,38 @@
   background-color: white;
   transform: scale(0.5);
   transition: 0.4s all;
-  width: 70vw;
   
-
-
 }
 
 .modal-content.active {
   transform: scale(1);
   transition: 0.4s all;
+}
+
+.modal-slider {
+  width: 60vw;
+  margin: 1rem 0 0;
+}
+
+.modal-slide {
+  border: 1px solid;
+  overflow: hidden;
+  height: 600px;
+}
+
+.modal-card {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-slider .swiper-button-prev,
+.modal-slider .swiper-button-next {
+  color: #709dff;
+  text-shadow: 0 0 3px black;
+}
+
+
+.modal-slider .swiper-button-prev:hover,
+.modal-slider .swiper-button-next:hover {
+  opacity: 0.5;
 }
