@@ -26,6 +26,10 @@
     object-fit: cover;
 }
 
+.property .container img:hover {
+    cursor: pointer;
+}
+
 .span-3 {
     grid-column: span 3;
 }

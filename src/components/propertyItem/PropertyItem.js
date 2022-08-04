@@ -4,16 +4,25 @@ import Bed2 from '../../assets/bed2.jpg'
 import Kitchen from '../../assets/kitchen.jpg'
 import Bathroom from '../../assets/bath1.jpg'
 import './PropertyItem.css'
+import ModalGallery from '../modalGallery/ModalGallery'
+import { useState } from 'react'
 
 const PropertyItem = () => {
+
+    const [modalActive, setModalActive] = useState(false)
+
+    const clickHandler = () => {
+        setModalActive(true)
+    }
+
   return (
     <div className="property">
       <div className='container'>
-        <img className='span-3 image-grid-row-2' src={House1} alt='' />
-        <img src={Bed1} alt='' />
-        <img src={Bed2} alt='' />
-        <img src={Kitchen} alt='' />
-        <img src={Bathroom} alt='' />
+        <img className='span-3 image-grid-row-2' src={House1} alt='' onClick={clickHandler} />
+        <img src={Bed1} alt='' onClick={clickHandler} />
+        <img src={Bed2} alt='' onClick={clickHandler} />
+        <img src={Kitchen} alt='' onClick={clickHandler} />
+        <img src={Bathroom} alt='' onClick={clickHandler} />
         <div className='span-3 img-details'>
             <div className='top'>
                 <h2>R. Nelson Mandela, Rio de Janeiro, RJ</h2>
@@ -43,9 +52,11 @@ const PropertyItem = () => {
             <p>Uma bela casa moderna na cidade com uma piscina em tamanho real. Casa espaçosa e luxuosa localizada em Botafogo, RJ. Incluindo sala de mídia, academia de ginástica e sauna embutida. </p>
             <button className='btn'>Fale conosco</button>
         </div>
+      </div>
+      <div className="container">
+        <ModalGallery active={modalActive} setActive={setModalActive} />
+      </div>
     </div>
-
-  </div>
     
 
     
