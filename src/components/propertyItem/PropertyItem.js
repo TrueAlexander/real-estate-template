@@ -16,8 +16,8 @@ const PropertyItem = () => {
         <img src={Bathroom} alt='' />
         <div className='span-3 img-details'>
             <div className='top'>
-                <h2>888, R. Nelson Mandela, Rio de Janeiro, RJ</h2>
-                <p>Casa de venda</p>
+                <h2>R. Nelson Mandela, Rio de Janeiro, RJ</h2>
+                <p>Casa à venda</p>
                 <p className='price'>R$2,677,000</p>
             </div>
             <div className='info-grid'>

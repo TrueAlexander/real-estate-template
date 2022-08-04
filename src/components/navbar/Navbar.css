@@ -9,6 +9,7 @@
 }
 
 .navbar .container {
+    
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -17,11 +18,17 @@
 }
 
 .navbar span {
+    
     color: #5651e5;
+}
+
+.navbar h1 {
+    cursor: pointer;
 }
 
 .navbar .nav-menu {
     display: flex;
+   
 }
 
 .navbar li {
@@ -34,6 +41,7 @@
 
 .navbar .icon {
     font-size: 1.5rem;
+    
 }
 
 @media screen and (max-width:940px) {

@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className='home'>
             <div className='content'>
-                <h1>Busca seu lugar na nossa cidade</h1>
+                <h1>Busque seu lugar na Cidade Maravilhosa</h1>
                 <p className='search-text'> Transformando Sonhos em Realidade </p>
                 <form className='search'>
                     <div className='radio'> 
@@ -19,12 +19,19 @@ const Home = () => {
                     </div>
                     <div>
                         <select name="product" id="">
-                            <option value="">O que você procura..</option>
+                            <option value="">O que procura..</option>
                             <option value="apartment">Apartamento</option>
                             <option value="house">Casa</option>
                             <option value="room">Quarto</option>
                         </select>
-                        {/* <input type='text' placeholder='O que você procura..' /> */}
+                    </div>
+                    <div>
+                        <select name="zone" id="">
+                            <option value="">No bairro..</option>
+                            <option value="lapa">Lapa</option>
+                            <option value="maracana">Maracanã</option>
+                            <option value="botafogo">Botafogo</option>
+                        </select>
                     </div>
                     <Link to='/imoveis' className='btn'><AiOutlineSearch className='icon'/></Link>
                 </form>

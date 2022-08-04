@@ -19,6 +19,7 @@
 }
 
 .home .content {
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -27,6 +28,7 @@
     max-width: 700px;
     margin: auto;
     padding: 1rem;
+   
 }
 
 .home h1 {
@@ -40,6 +42,7 @@
 }
 
 .search {
+
     display: flex;
     background-color: #fff;
     color: #333;
@@ -48,16 +51,17 @@
     border: 1px solid #ccc;
     padding: 4px 15px;
     border-radius: 8px;
+  
 }
 
 .search select {
     border: transparent;
     background-color: transparent;
-    width: 350px;
-    text-indent: 40px;
+    width: 180px;
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+  
     
 }
 
@@ -90,6 +94,10 @@
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.search .btn:hover {
+    background-image: linear-gradient(100deg, #5651e5 0%, #709dff 100%);
 }
 
 .search button:active {

@@ -14,17 +14,16 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='container'>
-                <h1><span><BsFillHouseFill />Maria</span> Imóveis</h1>
+                <h1><Link to="./"><span><BsFillHouseFill />Sasha</span> Imóveis</Link></h1>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/imoveis'>Imóveis</a></li>
-                    <li><a href='/'>Sobre nós</a></li>
-                    <li><a href='/'>Opiniões</a></li>
-                    <li><a href='/'>Contatos</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/imoveis'>Imóveis</Link></li>
+                    <li><Link to='/'>Sobre nós</Link></li>
+                    <li><Link to='/'>Opiniões</Link></li>
+                    <li><Link to='/'>Contatos</Link></li>
                 </ul>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
-                
                 </div>
             </div>
         </div>

@@ -14,7 +14,8 @@ const Products = () => {
             <div>
                 <p><span className='bold'>Todos</span></p>
                 <p>Venda</p>
-                <p>Aluguel</p>
+                <p>Aluguél</p>
+                <p>Temporada</p>
             </div>
             <div className='container'>
                 <img src={Apt1} alt='' />

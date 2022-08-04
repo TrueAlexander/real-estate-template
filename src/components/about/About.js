@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className="about-item">
           <div className="about-text">
-            <p>Maria Abreu, iniciou suas atividades visando construir a sua história no mercado imobiliário do Rio de Janeiro, de forma sólida, confiável e duradoura. </p>
+            <p>Sasha Abreu, iniciou suas atividades visando construir a sua história no mercado imobiliário do Rio de Janeiro, de forma sólida, confiável e duradoura. </p>
             <p>A atuação acontece com dinamismo e profissionalismo na prestação dos serviços. Venha nos conhecer!</p>
           </div>
         </div>

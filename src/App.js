@@ -8,8 +8,8 @@ import ProductPage from './pages/ProductPage'
 const App = () => {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path='/' element={<MainPage/>} />
           <Route path='/imoveis' element={<ProductPage/>}/>
