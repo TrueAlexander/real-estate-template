@@ -13,6 +13,7 @@
   transition: 0.5s;
   pointer-events: none;
   text-align: center;
+  z-index: 100;
 }
 
 .modal.active {

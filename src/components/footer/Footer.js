@@ -43,6 +43,12 @@ const Footer = () => {
                     <p>About Us</p>
                 </div>
             </div>
+            <div className="footer-copyright">
+                <p>
+                    Created by
+                        <a href="https://eformaliza.com/" title="clique para saber mais"> eformaliza.com</a>
+                </p>
+            </div>
         </div>
     )
 }

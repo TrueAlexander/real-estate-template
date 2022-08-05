@@ -20,16 +20,51 @@
 
 .footer p {
     margin: .4rem 0;
+    cursor: pointer;
 }
 
 .footer .social {
     text-align: center;
 }
 
+.footer-copyright {
+    margin: 3rem auto 0;
+    text-align: end;
+    width: fit-content;
+}
+
+.footer-copyright p {
+    text-transform: lowercase;
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.footer-copyright p a {
+    text-transform: none;
+    color: inherit;
+    font-size: inherit;
+}
+     
+.footer-copyright p a::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -35px;
+    top: -7px;
+    width: 30px;
+    height: 30px;
+    background-image: url("./../../assets/eformaliza.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+  }
+    
+
 .footer .icon {
     font-size: 2rem;
     margin: 2rem 3rem;
     color: #5651e5;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 940px) {
