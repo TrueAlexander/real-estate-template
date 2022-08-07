@@ -25,7 +25,7 @@ const PropertyItem = () => {
         <img src={Bathroom} alt='' onClick={clickHandler} />
         <div className='span-3 img-details'>
             <div className='top'>
-                <h2>R. Nelson Mandela, Rio de Janeiro, RJ</h2>
+                <h3>R. Nelson Mandela, Rio de Janeiro, RJ</h3>
                 <p>Casa à venda</p>
                 <p className='price'>R$2,677,000</p>
             </div>
@@ -50,7 +50,7 @@ const PropertyItem = () => {
         </div>
         <div className='span-2 right-img-details'>
             <p>Uma bela casa moderna na cidade com uma piscina em tamanho real. Casa espaçosa e luxuosa localizada em Botafogo, RJ. Incluindo sala de mídia, academia de ginástica e sauna embutida. </p>
-            <button className='btn'>Fale conosco</button>
+            <button className='btn'><a href="https://wa.me/5521967261434">Fale conosco</a></button>
         </div>
       </div>
       <div className="container">

@@ -1,4 +1,45 @@
 .productHead {
   margin: 2rem auto;
   text-align: center;
+
 }
+
+.productHead h1 span {
+  color: #5651e5;
+}
+
+.productHead-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.productHead-row h3 {}
+
+.productHead-row select {
+  margin: 0 3rem;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+
+}
+
+.productHead-row button {}
+
+.toggle-product {
+  display: flex;
+  justify-content: center
+}
+
+.link-product {
+  text-decoration: underline;
+  color: #5651fe;
+  margin: 0 1rem;
+}
+
+.link-product:hover {
+  text-decoration: underline;
+  color: #1611b7;
+
+}
+
