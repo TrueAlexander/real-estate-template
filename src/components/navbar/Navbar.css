@@ -59,8 +59,8 @@
 
     .navbar .nav-menu {
         position: absolute;
-        display: flex;
-        /* display: none; */
+        /* display: flex; */
+        display: none;
         flex-direction: column;
         align-items: center;
         top: 90px;
@@ -70,12 +70,16 @@
         background: rgba(255,255,255, .98);
         transition: 0.5s ease-in-out;
         z-index: 10;
+        overflow-y: inherit;
+        
+       
     }
 
     .navbar .active {
         right: 0;
         display: flex;
         transition: 0.5s ease-in-out;
+        overflow: hidden;
     }
 
     .navbar .nav-menu li a {
