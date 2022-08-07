@@ -1,13 +1,5 @@
-.property {
-    
-    
+.property {  
 }
-
-/* .featured .featured-text {
-    text-align: center;
-    margin: 1rem 0;
-} */
-
 .property .container {
     --gap: 1.2rem;
     --num-cols: 5;

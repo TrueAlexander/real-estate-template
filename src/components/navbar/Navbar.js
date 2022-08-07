@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import {BsFillHouseFill} from 'react-icons/bs'
+import { Dimensions } from 'react'
 import {Link} from 'react-router-dom'
 import 'animate.css'
 
@@ -17,7 +18,8 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        burger ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
+
+        burger ? document.body.style.overflow = 'hidden' : document.body.style.overflow = '' 
       }, [burger])
 
     return (
@@ -26,8 +28,9 @@ const Navbar = () => {
                 <h1><Link to="./"><span><BsFillHouseFill />Sasha</span> Imóveis</Link></h1>
                 <ul 
                     className={burger 
-                        ? 'nav-menu active animate__animated animate__fadeIn' 
+                        ? 'nav-menu active' 
                         : 'nav-menu'
+                        // animate__animated animate__fadeIn
                     }
                 >
                     <li 

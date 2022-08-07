@@ -3,8 +3,8 @@
 }
 
 .about-row {
- 
-  padding: 2rem;
+  border: 1px solid;
+  padding: 2rem 0 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
