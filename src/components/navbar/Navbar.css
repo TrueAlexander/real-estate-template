@@ -5,11 +5,14 @@
     left: 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
+
+   
     
 }
 
 .navbar .container {
     
+   
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -29,6 +32,7 @@
 .navbar .nav-menu {
     display: flex;
    
+   
 }
 
 .navbar li {
@@ -44,6 +48,7 @@
 
 .navbar .icon {
     font-size: 1.5rem;
+
     
 }
 
@@ -55,6 +60,7 @@
     .navbar .nav-menu {
         position: absolute;
         display: flex;
+        /* display: none; */
         flex-direction: column;
         align-items: center;
         top: 90px;
@@ -62,12 +68,14 @@
         height: 100%;
         width: 100%;
         background: rgba(255,255,255, .98);
-        transition: 0.4s ease-in-out;
+        transition: 0.5s ease-in-out;
         z-index: 10;
     }
 
     .navbar .active {
         right: 0;
+        display: flex;
+        transition: 0.5s ease-in-out;
     }
 
     .navbar .nav-menu li a {

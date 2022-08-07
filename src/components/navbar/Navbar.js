@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import {BsFillHouseFill} from 'react-icons/bs'
@@ -8,22 +8,45 @@ import './Navbar.css'
 
 const Navbar = () => {
 
-    const[click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+    const [burger, setBurger] = useState(false)
+    
+    const burgerClick = () => {
+        setBurger(!burger)
+    }
+
+    useEffect(() => {
+        burger ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
+      }, [burger])
 
     return (
         <div className='navbar'>
             <div className='container'>
                 <h1><Link to="./"><span><BsFillHouseFill />Sasha</span> Imóveis</Link></h1>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className="bold"><Link to='/'>Home</Link></li>
-                    <li className="bold"><Link to='/imoveis'>Imóveis</Link></li>
-                    <li className="bold"><Link to='/'>Sobre nós</Link></li>
-                    <li className="bold"><Link to='/'>Opiniões</Link></li>
-                    <li className="bold"><Link to='/'>Contatos</Link></li>
+                <ul className={burger ? 'nav-menu active' : 'nav-menu'}>
+                    <li 
+                        className="bold" 
+                        onClick={() => setBurger(!burger)}
+                    ><Link to='/'>Home</Link>
+                    </li>
+                    <li 
+                        className="bold"
+                        onClick={() => setBurger(!burger)}
+                    ><Link to='/imoveis'>Imóveis</Link></li>
+                    <li 
+                        className="bold"
+                        onClick={() => setBurger(!burger)}
+                    ><Link to='/'>Sobre nós</Link></li>
+                    <li 
+                        className="bold"
+                        onClick={() => setBurger(!burger)}
+                    ><Link to='/'>Opiniões</Link></li>
+                    <li 
+                        className="bold"
+                        onClick={() => setBurger(!burger)}
+                    ><Link to='/'>Contatos</Link></li>
                 </ul>
-                <div className='hamburger' onClick={handleClick}>
-                    {click ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
+                <div className='hamburger' onClick={burgerClick}>
+                    {burger ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}
                 </div>
             </div>
         </div>
