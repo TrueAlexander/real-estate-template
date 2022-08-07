@@ -8,18 +8,6 @@
     margin: 1rem 0;
 }
 
-.featured .container {
-    --gap: 1.2rem;
-    --num-cols: 5;
-    --row-height: 300px;
-
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap)
-}
-
 
 
 

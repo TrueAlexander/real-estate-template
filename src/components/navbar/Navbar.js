@@ -13,6 +13,7 @@ const Navbar = () => {
     
     const burgerClick = () => {
         setBurger(!burger)
+       
     }
 
     useEffect(() => {
@@ -25,7 +26,7 @@ const Navbar = () => {
                 <h1><Link to="./"><span><BsFillHouseFill />Sasha</span> Imóveis</Link></h1>
                 <ul 
                     className={burger 
-                        ? 'nav-menu active animate__animated animate__fadeInRight' 
+                        ? 'nav-menu active animate__animated animate__fadeIn' 
                         : 'nav-menu'
                     }
                 >
