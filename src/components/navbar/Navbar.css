@@ -81,12 +81,12 @@
 @media screen and (max-width:940px) and (orientation: landscape) {
     
     .navbar .nav-menu li {
-        padding: 0.8rem;
+        padding: 0.5rem;
     }
 
 
     .navbar .nav-menu li a {
-        font-size: 1.5rem;    
+        font-size: 1.1rem;    
     }
  
 }
