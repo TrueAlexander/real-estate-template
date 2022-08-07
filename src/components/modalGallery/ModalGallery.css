@@ -28,28 +28,34 @@
   background-color: white;
   transform: scale(0.5);
   transition: 0.4s all;
-  
+  height: 90%;
+  width: 60%;
 }
 
 .modal-content.active {
   transform: scale(1);
-  transition: 0.4s all;
+  transition: 0.4s all; 
+  height: 90%;
+  width: 60%;
+
 }
 
 .modal-slider {
-  width: 60vw;
   margin: 1rem 0 0;
+ 
 }
 
-.modal-slide {
-  border: 1px solid;
-  overflow: hidden;
-  height: 600px;
+.modal-slide .btn {
+  padding: 0.5rem 1rem;
 }
 
 .modal-card {
+  padding-bottom: 1rem;
+  height: 560px;
+}
+
+.modal-card img {
   height: 100%;
-  width: 100%;
 }
 
 .modal-slider .swiper-button-prev,
@@ -62,4 +68,5 @@
 .modal-slider .swiper-button-prev:hover,
 .modal-slider .swiper-button-next:hover {
   opacity: 0.5;
+  color: white;
 }

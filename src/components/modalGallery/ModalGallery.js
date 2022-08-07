@@ -1,6 +1,7 @@
 import './ModalGallery.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation} from 'swiper'
+import { useEffect } from 'react'
 
 import Bed2 from '../../assets/bed2.jpg'
 import House1 from '../../assets/house1.jpg'
@@ -9,8 +10,12 @@ import Kitchen from '../../assets/kitchen.jpg'
 import Bathroom from '../../assets/bath1.jpg'
 
 
-const ModalGallery = ({active, setActive, children}) => {
+const ModalGallery = ({active, setActive}) => {
   
+  useEffect(() => {
+    active ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
+  }, [active])
+
   return (
     <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)} >
       <div className={active ? "modal-content active" : "modal-content"} onClick={e => e.stopPropagation()} >
@@ -40,28 +45,29 @@ const ModalGallery = ({active, setActive, children}) => {
         <SwiperSlide className="modal-slide">
           <div className="modal-card">
             <img src={House1} alt="property" />
-          </div>  
+          </div>
         </SwiperSlide>
         <SwiperSlide className="modal-slide">
           <div className="modal-card">
             <img src={Kitchen} alt="property" />
-          </div>  
+          </div>
         </SwiperSlide>
         <SwiperSlide className="modal-slide">
           <div className="modal-card">
             <img src={Bed2} alt="property" />
-          </div>  
+          </div>
         </SwiperSlide>
         <SwiperSlide className="modal-slide">
           <div className="modal-card">
             <img src={Bathroom} alt="property" />
-          </div>  
+          </div>
         </SwiperSlide>
         <SwiperSlide className="modal-slide">
           <div className="modal-card">
             <img src={Bed1} alt="property" />
-          </div>  
+          </div>
         </SwiperSlide>
+        <button className='btn' onClick={() => setActive(false)}>Fechar</button>
       </Swiper>
       </div> 
     </div>

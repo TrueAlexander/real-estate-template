@@ -16,13 +16,15 @@ const Home = () => {
                         <label>Comprar</label>
                         <input type='radio'  />
                         <label>Alugar</label>
+                        <input type='radio'  />
+                        <label>Temporada</label>
                     </div>
                     <div>
                         <select name="product" id="">
-                            <option value="">O que procura..</option>
+                            <option value="">Procuro..</option>
                             <option value="apartment">Apartamento</option>
                             <option value="house">Casa</option>
-                            <option value="room">Quarto</option>
+                            <option value="room">Kitnette</option>
                         </select>
                     </div>
                     <div>
@@ -31,6 +33,8 @@ const Home = () => {
                             <option value="lapa">Lapa</option>
                             <option value="maracana">Maracanã</option>
                             <option value="botafogo">Botafogo</option>
+                            <option value="flamengo">Flamengo</option>
+                            <option value="santa-teresa">Santa Teresa</option>
                         </select>
                     </div>
                     <Link to='/imoveis' className='btn'><AiOutlineSearch className='icon'/></Link>
