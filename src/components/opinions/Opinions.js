@@ -16,18 +16,19 @@ const Opinions = () => {
         modules={[Navigation, Pagination]}
         spaceBetween={0}
         slidesPerView={3}
-        // breakpoints={{
-        //   // when window width is >= 640px
-        //   640: {
-        //     width: 640,
-        //     slidesPerView: 1,
-        //   },
-        //   // when window width is >= 768px
-        //   768: {
-        //     width: 768,
-        //     slidesPerView: 2,
-        //   },
-        // }}
+        breakpoints={{
+          200: {
+            slidesPerView: 1,
+          },
+    
+          720: {
+            slidesPerView: 2,
+          },
+    
+          1100: {
+            slidesPerView: 3,
+          }
+        }}
         loop={true}
         navigation
         pagination={{ clickable: true, dynamicBullets: true, }}

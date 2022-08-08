@@ -1,14 +1,15 @@
 .opinions {
   text-align: center;
+  margin: 2.5rem auto;
 }
 
 .slider {
-  max-width: 80%;
+  max-width: 100%;
   padding: 2rem;
   height: 250px;
   margin: 1rem;
   overflow: hidden;
- 
+
 }
 
 .slide {
@@ -37,7 +38,15 @@
 
 .slider .swiper-button-prev,
 .slider .swiper-button-next {
-  color: black;
+  color: black; 
+}
+
+.slider .swiper-button-prev {
+  transform: translateX(-10px);
+ }
+
+.slider .swiper-button-next {
+ transform: translateX(10px);
 }
 
 

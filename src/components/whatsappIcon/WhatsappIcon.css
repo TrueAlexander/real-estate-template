@@ -4,6 +4,7 @@
   top: 85%;
   opacity: 0.95;
   cursor: pointer;
+  z-index: 100;
 }
 
 .whatsapp img {

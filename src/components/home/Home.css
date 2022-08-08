@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 940px) {
     .home {
-        height: 70vh;
+        height: 90vh;
     }
 
     .home h1 {
@@ -118,10 +118,37 @@
     .search select {
         width: 100%;
     }
+}
 
-    /* .search input[type=text] {
-        width: 100%;
-    } */
+@media screen and (max-width:650px) {
+    .home {
+        height: 90vh;
+    }
+
+    .home h1 {
+        font-size: 1.9rem;
+        
+    }
+
+    .home .search-text {
+        font-size: 1.3rem;
+      
+        margin: 1.8rem auto;
+    }
+
+    .search {
+        justify-content:end;
+        padding: 4px 5px; 
+    }
+
+    .search div {
+        flex: 50%;
+        margin: 0 2%;
+    }
+
+    .search .radio {
+        display: none;    
+    }
 }
 
 
