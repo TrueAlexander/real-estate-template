@@ -1,7 +1,7 @@
 
 .modal {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -28,34 +28,46 @@
   background-color: white;
   transform: scale(0.5);
   transition: 0.4s all;
-  height: 90%;
-  width: 60%;
+  /* height: 90%; */
+  /* width: 60%; */
+  /* min-width: 300px; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .modal-content.active {
   transform: scale(1);
   transition: 0.4s all; 
-  height: 90%;
-  width: 60%;
+  max-height: 90%;
+  margin: 0 1rem;
+  /* width: 60%; */
+  max-width: 800px;
 
+}
+
+.modal-content button {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .modal-slider {
-  margin: 1rem 0 0;
+  margin: 1rem 0 0.5rem;
+
+  width: 100%;
  
 }
 
-.modal-slide .btn {
-  padding: 0.5rem 1rem;
-}
-
 .modal-card {
+  display: block;
   padding-bottom: 1rem;
-  height: 560px;
+  height: fit-content;
 }
 
 .modal-card img {
-  height: 100%;
+  height: auto;
+  
 }
 
 .modal-slider .swiper-button-prev,

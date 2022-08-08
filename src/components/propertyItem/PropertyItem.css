@@ -43,6 +43,7 @@
 }
 
 .property .top {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +103,13 @@
     .order-7 {
         order: 7;
     }
+}
+
+@media screen and (max-width: 600px) {
+ .top {
+    flex-direction: column;
+    height: 110px;
+ }
 }
 
 

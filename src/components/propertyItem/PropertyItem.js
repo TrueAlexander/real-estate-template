@@ -26,24 +26,27 @@ const PropertyItem = () => {
         <div className='span-3 img-details'>
             <div className='top'>
                 <h3>R. Nelson Mandela, Rio de Janeiro, RJ</h3>
-                <p>Casa à venda</p>
+                <h2 className='bold blue'>Casa</h2>
                 <p className='price'>R$2,677,000</p>
             </div>
             <div className='info-grid'>
                 <div>
+                    <div className='info'>
+                        <p className='bold'>Imóvel:</p><p className='bold blue'>Venda</p>
+                    </div>
                     <div className='info'>
                         <p className='bold'>Dormitorios:</p><p>5</p>
                     </div>
                     <div className='info'>
                         <p className='bold'>Banheiros:</p><p>7</p>
                     </div>
-                </div>
+                    </div>
                 <div>
                     <div className='info'>
                         <p className='bold'>Área total:</p><p>8,138</p>
                     </div>
                     <div className='info'>
-                        <p className='bold'>Bairro:</p><p className='bold'>Botafogo</p>
+                        <p className='bold'>Bairro:</p><p className='bold blue'>Botafogo</p>
                     </div>
                 </div>
             </div>

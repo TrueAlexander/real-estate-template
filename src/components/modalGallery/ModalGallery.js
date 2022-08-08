@@ -25,50 +25,38 @@ const ModalGallery = ({active, setActive}) => {
           modules={[Navigation,]}
           spaceBetween={0}
           slidesPerView={1}
-          // breakpoints={{
-          //   // when window width is >= 640px
-          //   640: {
-          //     width: 640,
-          //     slidesPerView: 1,
-          //   },
-          //   // when window width is >= 768px
-          //   768: {
-          //     width: 768,
-          //     slidesPerView: 2,
-          //   },
-          // }}
           loop={true}
           navigation
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
-      >
-        <SwiperSlide className="modal-slide">
-          <div className="modal-card">
-            <img src={House1} alt="property" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="modal-slide">
-          <div className="modal-card">
-            <img src={Kitchen} alt="property" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="modal-slide">
-          <div className="modal-card">
-            <img src={Bed2} alt="property" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="modal-slide">
-          <div className="modal-card">
-            <img src={Bathroom} alt="property" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="modal-slide">
-          <div className="modal-card">
-            <img src={Bed1} alt="property" />
-          </div>
-        </SwiperSlide>
+        >
+          <SwiperSlide className="modal-slide">
+            <div className="modal-card">
+              <img src={House1} alt="property" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="modal-slide">
+            <div className="modal-card">
+              <img src={Kitchen} alt="property" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="modal-slide">
+            <div className="modal-card">
+              <img src={Bed2} alt="property" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="modal-slide">
+            <div className="modal-card">
+              <img src={Bathroom} alt="property" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="modal-slide">
+            <div className="modal-card">
+              <img src={Bed1} alt="property" />
+            </div>
+          </SwiperSlide>  
+        </Swiper>
         <button className='btn' onClick={() => setActive(false)}>Fechar</button>
-      </Swiper>
       </div> 
     </div>
   )

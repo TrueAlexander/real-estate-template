@@ -52,8 +52,7 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        top: 90px;
-        /* right: -100%; */
+        top: 70px;
         height: 100vh;
         width: 100%;
         background: rgba(255,255,255, .98);

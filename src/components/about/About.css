@@ -3,8 +3,7 @@
 }
 
 .about-row {
-  border: 1px solid;
-  padding: 2rem 0 4rem;
+  padding: 2rem 1rem 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,18 +13,19 @@
 
 .about-item {
   flex: 0 1 50%;
-  height: 400px;
+  height: fit-content;
   overflow: hidden;
+
 
 }
 
 .about-item .about-img,
 .about-item .about-img img {
-  height: 100%;
+  height: 400px;
 }
 
 .about-text {
-  padding: 2rem;
+  padding-top: 20px;
   text-align: justify;
   display: flex;
   flex-direction: column;

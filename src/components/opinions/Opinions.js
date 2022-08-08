@@ -38,7 +38,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Parceria é a palavra chave para Falar de Maria Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
+              "Parceria é a palavra chave para Falar de Sasha Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
             </p>
             <p className="bold">
             José Rocha - Proprietário
@@ -48,7 +48,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Maria. Tudo perfeito ! Voltaremos!"
+              "Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Sasha. Tudo perfeito ! Voltaremos!"
             </p>
             <p className="bold">
               Ana Pinho - Temporada
@@ -58,7 +58,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Compramos nosso primeiro apartamento com Maria. Não tivemos nenhum problema. Atendimento Impecável"
+              "Compramos nosso primeiro apartamento com Sasha. Não tivemos nenhum problema. Atendimento Impecável"
             </p>
             <p className="bold">
               Vania Lopes - Compra
@@ -68,7 +68,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Parceria é a palavra chave para Falar de Maria Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
+              "Parceria é a palavra chave para Falar de Sasha Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
             </p>
             <p className="bold">
               José Rocha - Proprietário
@@ -78,7 +78,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Maria. Tudo perfeito ! Voltaremos!"
+              "Minha estadia no Rio de Janeiro, foi algo maravilhoso. Surpreendente foi o imóvel da Sasha. Tudo perfeito ! Voltaremos!"
             </p>
             <p className="bold">
               Ana Pinho - Temporada
@@ -88,7 +88,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Compramos nosso primeiro apartamento com Maria. Não tivemos nenhum problema. Atendimento Impecável"
+              "Compramos nosso primeiro apartamento com Sasha. Não tivemos nenhum problema. Atendimento Impecável"
             </p>
             <p className="bold">
               Vania Lopes - Compra
