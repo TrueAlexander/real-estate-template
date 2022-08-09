@@ -38,7 +38,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Parceria é a palavra chave para Falar de Sasha Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
+              "Parceria é a palavra chave para falar de Sasha Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
             </p>
             <p className="bold">
             José Rocha - Proprietário
@@ -68,7 +68,7 @@ const Opinions = () => {
         <SwiperSlide className="slide">
           <div className="slide-card">
             <p>
-              "Parceria é a palavra chave para Falar de Sasha Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
+              "Parceria é a palavra chave para falar de Sasha Abreu Imóveis. A tranquilidade de ter meus imóveis administrados por ela não tem preço"
             </p>
             <p className="bold">
               José Rocha - Proprietário

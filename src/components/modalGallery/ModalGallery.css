@@ -28,46 +28,48 @@
   background-color: white;
   transform: scale(0.5);
   transition: 0.4s all;
-  /* height: 90%; */
-  /* width: 60%; */
-  /* min-width: 300px; */
+  height: 630px;
+  max-height: 100%;
+  width: 900px; 
+  max-width: 100%;
  
-  
 }
 
 .modal-content.active {
   transform: scale(1);
-  transition: 0.4s all; 
-  max-height: 90%;
-  margin: 0 1rem;
-  /* width: 60%; */
-  max-width: 800px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  transition: 0.4s all;  
 }
 
+.modal-content h2 {}
+
 .modal-content button {
-  width: fit-content;
-  margin: 0 auto;
+  
 }
 
 .modal-slider {
-  margin: 1rem 0 0.5rem;
-
-  width: 100%;
  
-}
+ }
+ 
+.modal-slide {
 
-.modal-card {
-  display: block;
-  padding-bottom: 1rem;
-  height: fit-content;
-}
-
-.modal-card img {
-  height: auto;
   
+}
+
+.modal-slide .modal-card {
+
+  max-width: 900px;
+  max-height: 500px;
+
+  margin: 1rem auto 1rem;
+  overflow: hidden;
+  
+} 
+
+.modal-slide .modal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position: center; 
 }
 
 .modal-slider .swiper-button-prev,
@@ -81,4 +83,31 @@
 .modal-slider .swiper-button-next:hover {
   opacity: 0.5;
   color: white;
+}
+
+@media screen and (max-width:940px) {
+  .modal-content {
+    height: fit-content;
+  }
+  .modal-slide .modal-card {
+    /* max-width: 540px;
+    max-height: 70vh; */
+    margin: 0.5rem auto 0rem;
+  
+    
+  } 
+}
+
+@media screen and (max-width:940px) and (orientation: landscape) {
+  .modal-content {
+   height: 100%;
+  }
+  .modal-slide .modal-card {
+    max-width: 540px;
+    max-height: 70vh;
+    margin: 0.5rem auto 0.5rem;
+  
+    
+  } 
+
 }

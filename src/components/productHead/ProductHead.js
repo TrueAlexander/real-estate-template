@@ -8,6 +8,9 @@ const ProductHead = () => {
       <div className="container">
       <div className="toggle-product">
           <Link className='link-product' to='./../imoveis'>
+            <p>{"Todos"}</p>
+          </Link>
+          <Link className='link-product' to='./../imoveis'>
             <p>{"Casa"}</p>
           </Link>
           <Link className='link-product' to='./../imoveis'>
@@ -16,7 +19,7 @@ const ProductHead = () => {
         </div>
         <h1>{"Apartamento"} <span>{"à Venda"}</span></h1>
         <div className="productHead-row">
-          <h3>Troque o bairro de busca:</h3>
+          <h3>Escolha o bairro:</h3>
           <select name="zone" id="">
               <option value="all">Todos</option>
               <option value="botafogo">Botafogo</option>
@@ -29,10 +32,10 @@ const ProductHead = () => {
         </div>
         <div className="toggle-product">
           <Link className='link-product blue' to='./../imoveis'>
-            <p>{"Apartamento"} ao Aluguél</p>
+            <p>{"Apartamento"} para Aluguel</p>
           </Link>
           <Link className='link-product blue' to='./../imoveis'>
-            <p>{"Apartamento"} à Temporada</p>
+            <p>{"Apartamento"} para Temporada</p>
           </Link>
         </div>
       </div>     

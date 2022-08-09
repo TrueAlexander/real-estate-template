@@ -43,7 +43,7 @@ const Products = () => {
                     className={clickedRent ? "bold" : ""}
                     onClick={clickHandler} 
                 >
-                    Aluguél</p>
+                    Aluguel</p>
                 <p 
                     className={clickedTemp ? "bold" : ""}
                     onClick={clickHandler} 

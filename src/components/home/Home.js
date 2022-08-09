@@ -22,6 +22,7 @@ const Home = () => {
                     <div>
                         <select name="product" id="">
                             <option value="">Procuro..</option>
+                            <option value="all">Todos</option>
                             <option value="apartment">Apartamento</option>
                             <option value="house">Casa</option>
                             <option value="room">Kitnet</option>
@@ -30,6 +31,7 @@ const Home = () => {
                     <div>
                         <select name="zone" id="">
                             <option value="">No bairro..</option>
+                            <option value="all">Todos</option>
                             <option value="lapa">Lapa</option>
                             <option value="maracana">Maracanã</option>
                             <option value="botafogo">Botafogo</option>
