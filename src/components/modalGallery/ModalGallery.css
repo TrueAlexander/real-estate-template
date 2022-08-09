@@ -31,9 +31,7 @@
   /* height: 90%; */
   /* width: 60%; */
   /* min-width: 300px; */
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+ 
   
 }
 
@@ -44,7 +42,9 @@
   margin: 0 1rem;
   /* width: 60%; */
   max-width: 800px;
-
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-content button {

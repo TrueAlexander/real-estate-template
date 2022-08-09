@@ -43,3 +43,23 @@
 
 }
 
+@media screen and (max-width:650px) {
+  
+  .productHead-row {
+    display: block;
+  }
+  
+  .productHead h1 {
+    font-size: 1.5rem;
+  }
+
+  .productHead-row h3 {
+    margin: 1rem auto;
+  }
+
+  .link-product {
+
+    margin: 1.5rem 1rem 0;
+  }
+
+}

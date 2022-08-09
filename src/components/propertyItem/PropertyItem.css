@@ -110,6 +110,18 @@
     flex-direction: column;
     height: 110px;
  }
+
+ .top h2 {
+    width: 100%;
+    
+ }
+
+ .top p {
+    display: inline-block;
+    width: 100%;
+    text-align: end;
+  
+ }
 }
 
 

@@ -6,7 +6,7 @@ const ProductHead = () => {
   return (
     <div className="productHead">
       <div className="container">
-        <h1>Imóveis <span>{"à Venda"}</span></h1>
+        <h1>{"Apartamento"} <span>{"à Venda"}</span></h1>
         <div className="productHead-row">
           <h3>Troque o bairro de busca:</h3>
           <select name="zone" id="">
@@ -21,10 +21,10 @@ const ProductHead = () => {
         </div>
         <div className="toggle-product">
           <Link className='link-product' to='./../imoveis'>
-            <p>Imóveis ao Aluguél</p>
+            <p>{"Apartamento"} ao Aluguél</p>
           </Link>
           <Link className='link-product' to='./../imoveis'>
-            <p>Imoveis à Temporada</p>
+            <p>{"Apartamento"} à Temporada</p>
           </Link>
         </div>
       </div>     

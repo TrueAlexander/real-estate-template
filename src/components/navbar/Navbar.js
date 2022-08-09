@@ -13,13 +13,12 @@ const Navbar = () => {
     const [burger, setBurger] = useState(false)
     
     const burgerClick = () => {
-        setBurger(!burger)
-       
+        setBurger(!burger)   
     }
 
     useEffect(() => {
 
-        burger ? document.body.style.overflow = 'hidden' : document.body.style.overflow = '' 
+        burger && window.innerWidth < 940 ? document.body.style.overflow = 'hidden' : document.body.style.overflow = '' 
       }, [burger])
 
     return (
@@ -27,10 +26,11 @@ const Navbar = () => {
             <div className='container'>
                 <h1><Link to="./"><span><BsFillHouseFill />Sasha</span> Imóveis</Link></h1>
                 <ul 
-                    className={burger 
+                    className={burger && window.innerWidth < 940
                         ? 'nav-menu active animate__animated animate__fadeIn' 
                         : 'nav-menu'
                         // animate__animated animate__fadeIn
+                        // && window.innerWidth < 940
                     }
                 >
                     <li 

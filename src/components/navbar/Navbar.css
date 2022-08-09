@@ -57,7 +57,7 @@
         width: 100%;
         background: rgba(255,255,255, .98);
         transition: 0.5s ease-in-out;
-        z-index: 10;
+        z-index: 101;
         
          
     }
@@ -68,27 +68,28 @@
         text-align: center;
         transition: 0.5s ease-in-out;
         
+
+        
     }
 
     .navbar .nav-menu li a {
         font-size: 2rem;
+        
     }
 }
 
-@media screen and (max-width:940px) and (orientation: landscape) {
-    
-    .navbar .nav-menu li {
-        padding: 0.5rem;
-    }
 
-
-    .navbar .nav-menu li a {
-        font-size: 1.1rem;    
-    }
- 
-}
 
 @media screen and (max-width:650px) {
+    .navbar h1 {
+        font-size: 1.6rem;
+     }
+    .navbar .nav-menu li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:852px) and (orientation: landscape) {
 
     .navbar {
         height: 70px;
@@ -98,8 +99,13 @@
        font-size: 1.6rem;
     }
 
+    .navbar .nav-menu li {
+        padding: 0.5rem;
+    }
+
     .navbar .nav-menu li a {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        padding: 0.5rem;
     }
 }
 
