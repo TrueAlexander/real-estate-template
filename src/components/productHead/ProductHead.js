@@ -6,6 +6,14 @@ const ProductHead = () => {
   return (
     <div className="productHead">
       <div className="container">
+      <div className="toggle-product">
+          <Link className='link-product' to='./../imoveis'>
+            <p>{"Casa"}</p>
+          </Link>
+          <Link className='link-product' to='./../imoveis'>
+            <p>{"Kitnet"}</p>
+          </Link>
+        </div>
         <h1>{"Apartamento"} <span>{"à Venda"}</span></h1>
         <div className="productHead-row">
           <h3>Troque o bairro de busca:</h3>
@@ -20,10 +28,10 @@ const ProductHead = () => {
           <button className='btn'><AiOutlineSearch className='icon'/></button>
         </div>
         <div className="toggle-product">
-          <Link className='link-product' to='./../imoveis'>
+          <Link className='link-product blue' to='./../imoveis'>
             <p>{"Apartamento"} ao Aluguél</p>
           </Link>
-          <Link className='link-product' to='./../imoveis'>
+          <Link className='link-product blue' to='./../imoveis'>
             <p>{"Apartamento"} à Temporada</p>
           </Link>
         </div>

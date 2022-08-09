@@ -24,7 +24,7 @@ const Home = () => {
                             <option value="">Procuro..</option>
                             <option value="apartment">Apartamento</option>
                             <option value="house">Casa</option>
-                            <option value="room">Kitnette</option>
+                            <option value="room">Kitnet</option>
                         </select>
                     </div>
                     <div>

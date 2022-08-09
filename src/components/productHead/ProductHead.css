@@ -8,6 +8,10 @@
   color: #5651e5;
 }
 
+.productHead h1 {
+  margin-top: 1rem;
+}
+
 .productHead-row {
   display: flex;
   justify-content: center;
@@ -33,7 +37,7 @@
 
 .link-product {
   text-decoration: underline;
-  color: #5651fe;
+  /* color: #5651fe; */
   margin: 0 1rem;
 }
 
