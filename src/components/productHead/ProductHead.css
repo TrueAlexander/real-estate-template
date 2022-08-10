@@ -43,7 +43,7 @@
 
 .link-product:hover {
   text-decoration: underline;
-  color: #1611b7;
+  font-weight: 700;
 
 }
 

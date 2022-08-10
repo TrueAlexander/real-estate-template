@@ -6,7 +6,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer' id='contacts'>
             <div className='social'>
                 <FaFacebook className='icon' />
                 <FaInstagram className='icon' />

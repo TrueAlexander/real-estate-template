@@ -57,3 +57,7 @@ body {
 .blue {
   color:#5651e5;
 }
+
+.scrollLink:hover {
+  cursor: pointer;
+}

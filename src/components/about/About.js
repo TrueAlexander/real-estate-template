@@ -3,7 +3,7 @@ import Maria from './../../assets/Maria.jpg'
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h1 className="about-title">Sobre Nós</h1>
       <div className="container about-row">
         <div className="about-item">
