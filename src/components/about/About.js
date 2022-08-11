@@ -1,5 +1,5 @@
 import './About.css'
-import Maria from './../../assets/Maria.jpg'
+import Sasha from './../../assets/Sasha.jpg'
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className="container about-row">
         <div className="about-item">
           <div className="about-img">
-            <img src={Maria} alt="Maria Imóveis" />
+            <img src={Sasha} alt="Sasha Imóveis" />
           </div>
         </div>
         <div className="about-item">

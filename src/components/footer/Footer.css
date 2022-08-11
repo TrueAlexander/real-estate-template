@@ -65,6 +65,12 @@
     margin: 2rem 3rem;
     color: #5651e5;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer .icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 940px) {

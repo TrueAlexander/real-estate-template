@@ -3,14 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation} from 'swiper'
 import { useEffect } from 'react'
 
-import Bed2 from '../../assets/bed2.jpg'
-import House1 from '../../assets/house1.jpg'
-import Bed1 from '../../assets/bed1.jpg'
-import Kitchen from '../../assets/kitchen.jpg'
-import Bathroom from '../../assets/bath1.jpg'
 
 
-const ModalGallery = ({active, setActive}) => {
+const ModalGallery = ({active, setActive, photosArr}) => {
   
   useEffect(() => {
     active ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
@@ -27,34 +22,19 @@ const ModalGallery = ({active, setActive}) => {
           slidesPerView={1}
           loop={true}
           navigation
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide className="modal-slide">
-            <div className="modal-card">
-              <img src={House1} alt="property" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="modal-slide">
-            <div className="modal-card">
-              <img src={Kitchen} alt="property" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="modal-slide">
-            <div className="modal-card">
-              <img src={Bed2} alt="property" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="modal-slide">
-            <div className="modal-card">
-              <img src={Bathroom} alt="property" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="modal-slide">
-            <div className="modal-card">
-              <img src={Bed1} alt="property" />
-            </div>
-          </SwiperSlide>  
+          {photosArr.reverse().map((item, index) => {
+            return <SwiperSlide 
+                      key={index} 
+                      className="modal-slide">
+                      <div className="modal-card">
+                        <img 
+                          src={item} 
+                          alt={"property" + index} 
+                        />
+                      </div>
+                    </SwiperSlide>
+            })}
         </Swiper>
         <button className='btn' onClick={() => setActive(false)}>Fechar</button>
       </div> 

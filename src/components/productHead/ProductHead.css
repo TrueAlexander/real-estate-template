@@ -36,14 +36,12 @@
 }
 
 .link-product {
-  text-decoration: underline;
-  /* color: #5651fe; */
   margin: 0 1rem;
+  font-weight: 700;
 }
 
 .link-product:hover {
   text-decoration: underline;
-  font-weight: 700;
 
 }
 

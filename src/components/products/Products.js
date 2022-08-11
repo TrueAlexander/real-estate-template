@@ -1,9 +1,7 @@
 import React from 'react'
-import Apt1 from '../../assets/apt1.jpeg'
-import Apt2 from '../../assets/apt2.jpeg'
-import Apt3 from '../../assets/apt3.jpeg'
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
+import dataProp from './../../dataProp.json'
 
 import './Products.css'
 
@@ -24,6 +22,18 @@ const Products = () => {
         e.target.classList.add("bold")
 
     }
+
+    const fillProducts = () => {
+        
+        const showProp = dataProp.slice(0, 3)
+        
+        return showProp.map((item) => {
+        return <img 
+                    src={item.photo_main} 
+                    alt='' 
+                    key={item.id}/>
+    }) 
+    } 
 
     return (
         <div className='products'>
@@ -51,9 +61,7 @@ const Products = () => {
                     Temporada</p>
             </div>
             <div className='container'>
-                <img src={Apt1} alt='' />
-                <img src={Apt2} alt='' />
-                <img src={Apt3} alt='' />
+                {fillProducts()}
             </div>
             <Link 
                 className='btn'

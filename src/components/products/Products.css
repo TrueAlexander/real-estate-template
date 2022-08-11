@@ -34,6 +34,9 @@
 
 .products img {
     width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media screen and (max-width:940px) {
