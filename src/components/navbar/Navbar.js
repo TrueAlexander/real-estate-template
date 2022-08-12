@@ -17,9 +17,28 @@ const Navbar = ({fullNav}) => {
     }
 
     useEffect(() => {
-
-        burger && window.innerWidth < 940 ? document.body.style.overflow = 'hidden' : document.body.style.overflow = '' 
+        burger && window.innerWidth < 940 ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto' 
       }, [burger])
+
+    const fillNav = () => {
+        const ancors = [{title:"Sobre nós", anchor:"about"}, {title:"Opiniões", anchor:"opinions"}]
+         return ( fullNav ? ancors.map((item) => {
+            return (
+                <li className="bold"><LinkRoll
+                                            onClick={burgerClick} 
+                                            className='scrollLink' 
+                                            to={item.anchor} 
+                                            activeClass="active" 
+                                            spy={true} 
+                                            smooth={true} 
+                                            offset={-100} 
+                                            duration={500} 
+                                        >{item.title}
+                                    </LinkRoll>
+                            </li> 
+                    )}) : " "
+                ) 
+    }
 
     return (
         <div className='navbar'>
@@ -31,27 +50,32 @@ const Navbar = ({fullNav}) => {
                         : 'nav-menu'
                     }
                 >
-                    <li 
-                        className="bold" 
-                        onClick={() => setBurger(!burger)}
-                    ><Link to='/'>Home</Link>
+                    <li className="bold">
+                        <Link 
+                            to='/'
+                            onClick={burgerClick}
+                            >Home
+                        </Link>
                     </li>
-                    <li 
-                        className="bold"
-                        onClick={() => setBurger(!burger)}
-                    ><Link to='/imoveis'>Imóveis</Link></li>
-                    {fullNav && <li 
-                        className="bold"
-                        onClick={() => setBurger(!burger)}
-                    ><LinkRoll className='scrollLink' to='about' activeClass="active" spy={true} smooth={true} offset={-100} duration={500} >Sobre nós</LinkRoll></li>}
-                    {fullNav && <li 
-                        className="bold"
-                        onClick={() => setBurger(!burger)}
-                    ><LinkRoll className='scrollLink' to='opinions' activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Opiniões</LinkRoll></li>}
-                    <li 
-                        className="bold"
-                        onClick={() => setBurger(!burger)}
-                    ><LinkRoll className='scrollLink' to='contacts' activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>Contatos</LinkRoll></li>
+                    <li className="bold"       
+                        ><Link 
+                            to='/imoveis'
+                            onClick={burgerClick}
+                            >Imóveis
+                        </Link>
+                    </li>
+                    {fillNav()}
+                    <li className="bold"><LinkRoll 
+                            onClick={burgerClick}
+                            className='scrollLink' 
+                            to='contacts' 
+                            activeClass="active" 
+                            spy={true} 
+                            smooth={true} 
+                            offset={-100} 
+                            duration={500}
+                        >Contatos</LinkRoll>
+                    </li>
                 </ul>
                 <div className='hamburger' onClick={burgerClick}>
                     {burger ? (<FaRegTimesCircle className='icon' />) : (<HiOutlineMenuAlt4 className='icon' />)}

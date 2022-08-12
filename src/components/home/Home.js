@@ -13,9 +13,9 @@ const Home = () => {
                 <form className='search'>
                     <div className='radio'> 
                         <input type='radio' checked />
-                        <label>Comprar</label>
+                        <label>Venda</label>
                         <input type='radio'  />
-                        <label>Alugar</label>
+                        <label>Aluguel</label>
                         <input type='radio'  />
                         <label>Temporada</label>
                     </div>

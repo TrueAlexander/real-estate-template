@@ -32,8 +32,8 @@ const Opinions = () => {
         loop={true}
         navigation
         pagination={{ clickable: true, dynamicBullets: true, }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide className="slide">
           <div className="slide-card">

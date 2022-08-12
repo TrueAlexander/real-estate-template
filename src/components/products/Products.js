@@ -32,7 +32,7 @@ const Products = () => {
                     src={item.photo_main} 
                     alt='' 
                     key={item.id}/>
-    }) 
+        }) 
     } 
 
     return (
