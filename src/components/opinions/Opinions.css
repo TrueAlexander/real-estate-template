@@ -35,6 +35,9 @@
   line-height: 1.3rem;
   cursor: grabbing;
 }
+.slide-card p:first-child {
+  margin: auto;
+}
 
 .slider .swiper-button-prev,
 .slider .swiper-button-next {

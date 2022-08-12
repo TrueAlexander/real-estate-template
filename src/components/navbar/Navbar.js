@@ -22,9 +22,9 @@ const Navbar = ({fullNav}) => {
 
     const fillNav = () => {
         const ancors = [{title:"Sobre nós", anchor:"about"}, {title:"Opiniões", anchor:"opinions"}]
-         return ( fullNav ? ancors.map((item) => {
+         return ( fullNav ? ancors.map((item, index) => {
             return (
-                <li className="bold"><LinkRoll
+                <li className="bold" key={index}><LinkRoll
                                             onClick={burgerClick} 
                                             className='scrollLink' 
                                             to={item.anchor} 

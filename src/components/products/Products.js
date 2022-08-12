@@ -6,31 +6,54 @@ import dataProp from './../../dataProp.json'
 import './Products.css'
 
 const Products = () => {
-
+    
     const [clickedAll, setClickedAll] = useState(true)
     const [clickedSale, setClickedSale] = useState(false)
     const [clickedRent, setClickedRent] = useState(false)
     const [clickedTemp, setClickedTemp] = useState(false)
 
+    const [showProp, setShowProp] = useState(dataProp.slice(0, 3))
+    
 
     const clickHandler = (e) => {
-        console.log(e.target)
-        setClickedAll(false)
-        setClickedSale(false)
-        setClickedTemp(false)
-        setClickedRent(false)
-        e.target.classList.add("bold")
+        if (e.target.innerText !== "Todos") {
+            setClickedAll(false)
+        }
+        if (e.target.innerText === "Venda") {
+            setClickedSale(true)
+            setClickedRent(false)
+            setClickedTemp(false)
+        } else if (e.target.innerText ==="Aluguel") {
+            setClickedRent(true)
+            setClickedSale(false)
+            setClickedTemp(false)
+        } else if (e.target.innerText === "Temporada") {
+            setClickedTemp(true)
+            setClickedRent(false)
+            setClickedSale(false)
+        } else {
+            setClickedAll(true)
+            setClickedRent(false)
+            setClickedSale(false)
+            setClickedTemp(false)
+        }  
 
+        //for filtered render
+        let showChoosed
+        if (e.target.innerText !== "Todos") {
+           showChoosed = dataProp.filter((item) => (item.purpose === e.target.innerText))
+        } else showChoosed = dataProp
+        
+        setShowProp(showChoosed.slice(0, 3))
+         
     }
 
-    const fillProducts = () => {
-        
-        const showProp = dataProp.slice(0, 3)
-        
-        return showProp.map((item) => {
+    const fillProducts = (arr) => {
+          
+        return arr.map((item) => {
         return <img 
                     src={item.photo_main} 
-                    alt='' 
+                    alt='propiedade' 
                     key={item.id}/>
         }) 
     } 
@@ -61,7 +84,7 @@ const Products = () => {
                     Temporada</p>
             </div>
             <div className='container'>
-                {fillProducts()}
+                {fillProducts(showProp)}
             </div>
             <Link 
                 className='btn'

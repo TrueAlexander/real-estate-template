@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
             <div className="footer-copyright">
                 <p>
-                    Created by
+                    Criado por
                         <a href="https://eformaliza.com/" title="clique para saber mais"> eformaliza.com</a>
                 </p>
             </div>

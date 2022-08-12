@@ -17,6 +17,14 @@ const ProductHead = () => {
             <p>{"Kitnet"}</p>
           </Link>
         </div>
+        <div className="toggle-product">
+          <Link className='link-product blue' to='./../imoveis'>
+            <p>{"Aluguel"}</p>
+          </Link>
+          <Link className='link-product blue' to='./../imoveis'>
+            <p>{"Temporada"}</p>
+          </Link>
+        </div>
         <h1>{"Apartamento"} <span>{"à Venda"}</span></h1>
         <div className="productHead-row">
           <h3>Escolha o bairro:</h3>
@@ -30,14 +38,7 @@ const ProductHead = () => {
           </select>
           <button className='btn'><AiOutlineSearch className='icon'/></button>
         </div>
-        <div className="toggle-product">
-          <Link className='link-product blue' to='./../imoveis'>
-            <p>{"Apartamento"} para Aluguel</p>
-          </Link>
-          <Link className='link-product blue' to='./../imoveis'>
-            <p>{"Apartamento"} para Temporada</p>
-          </Link>
-        </div>
+        
       </div>     
     </div>
   )

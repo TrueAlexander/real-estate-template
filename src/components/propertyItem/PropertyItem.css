@@ -21,8 +21,8 @@
 
 .property .container img:hover {
     cursor: pointer;
-    transform: scale(1.03);
-    transition: 0.3s;
+    transform: scale(1.02);
+    transition: 0.4s ease-in-out 0.1s;
 }
 
 .span-3 {

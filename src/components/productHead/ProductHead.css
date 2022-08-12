@@ -32,7 +32,8 @@
 
 .toggle-product {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  margin: 1.5rem auto;
 }
 
 .link-product {
