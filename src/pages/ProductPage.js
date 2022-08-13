@@ -3,27 +3,30 @@ import PropertyItem from '../components/propertyItem/PropertyItem'
 import ProductHead from '../components/productHead/ProductHead'
 import Navbar from '../components/navbar/Navbar'
 import dataProp from '../dataProp.json'
-import filter from '../filter'
+import filter from '../utils/filter'
 import { useLocation } from 'react-router-dom'
 
 
 const ProductPage = () => {
 
-  //add dataProp to localStorage
-  localStorage.setItem("allProp", JSON.stringify(dataProp))
-
   //get request(state) from MainPage 
   const location = useLocation()
-  // console.log(location.state)
-  
+ 
+  const typeMainPage = location.state.type.type
+  const purposeMainPage = location.state.purpose.purpose
+  const zoneMainPage = location.state.zone.zone
+  const arrMainPage = filter(purposeMainPage, typeMainPage, zoneMainPage)
+  console.log(arrMainPage)
+
+
+
   //get request from productHead
 
 
-  // console.log(filter(dataProp));
 
-  const properties = () => {
+  const properties = (arr) => {
     
-    return dataProp.map((item => {
+    return arr.map((item => {
       return <PropertyItem 
                 key={item.id}
                 address={item.address}
@@ -45,7 +48,7 @@ const ProductPage = () => {
     <>
       <Navbar fullNav={false}/>
       <ProductHead />
-      {properties()}
+      {properties(arrMainPage)}
     </>
   )
 }

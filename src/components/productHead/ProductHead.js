@@ -1,8 +1,8 @@
 import './ProductHead.css'
 import { AiOutlineSearch } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import {useState} from 'react'
+import 'animate.css'
 
 const ProductHead = () => {
 
@@ -11,13 +11,20 @@ const ProductHead = () => {
   const type = location.state.type.type
   const zone = location.state.zone.zone
 
+  const [animated, setAnimated] = useState(false)
 
   const [purposeSelected, setPurposeSelected] = useState(purpose)
   const [typeSelected, setTypeSelected] = useState(type)
   const [zoneSelected, setZoneSelected] = useState(zone)
   const changeZoneHandler = (e) => setZoneSelected(e.target.value)
-  const changePurposeHandler = (e) => setPurposeSelected(e.target.innerText)
-  const changeTypeHandler = (e) => setTypeSelected(e.target.innerText)
+  const changePurposeHandler = (e) => {  
+    setPurposeSelected(e.target.innerText)
+    setAnimated(true)
+  }
+  const changeTypeHandler = (e) => {
+    setTypeSelected(e.target.innerText)
+    setAnimated(true)
+  }
 
   // const fillTypes = () => {
 
@@ -45,6 +52,16 @@ const ProductHead = () => {
   //             </div>
   //   })
   // }
+
+  const dataToRender = () => {
+    
+    const dataFilter = {
+      type: typeSelected,
+      purpose: purposeSelected,
+      zone: zoneSelected
+    }
+    console.log(dataFilter)
+  }
 
   return (
     <div className="productHead">
@@ -95,7 +112,7 @@ const ProductHead = () => {
             Temporada
           </p>
         </div>
-        <h1>{typeSelected} <span><small>{purposeSelected === "Venda" ? "à " : "para "}</small>{purposeSelected}</span></h1>
+        <h1 className={animated ? "animate__animated animate__fadeIn animate__slow" : ""} key={[typeSelected, purposeSelected]} >{typeSelected} <span><small className=''>{purposeSelected === "Venda" ? "à " : "para "}</small>{purposeSelected}</span></h1>
         <div className="productHead-row">
           <h3>Escolha o bairro:</h3>
           <select 
@@ -110,7 +127,11 @@ const ProductHead = () => {
               <option value="Santa Teresa">Santa Teresa</option>
               <option value="Maracanã">Maracanã</option>
           </select>
-          <button className='btn'><AiOutlineSearch className='icon'/></button>
+          <button 
+            className='btn'
+            onClick={dataToRender}
+          >
+            <AiOutlineSearch className='icon'/></button>
         </div>
         
       </div>     
