@@ -39,12 +39,26 @@
 .link-product {
   margin: 0 1rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.6s ease;
 }
 
 .link-product:hover {
   text-decoration: underline;
-
 }
+
+.link-product.active {
+  transition: 0.6s ease;
+  font-weight: 400;
+  cursor: default;
+  opacity: 0.4;
+}
+
+.link-product.active:hover {
+  text-decoration: none;
+}
+
+
 
 @media screen and (max-width:650px) {
   

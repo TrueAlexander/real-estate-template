@@ -6,6 +6,9 @@ import dataProp from './../../dataProp.json'
 import './Products.css'
 
 const Products = () => {
+
+    const type = "Todos"
+    const zone = "Todos"
     
     const [clickedAll, setClickedAll] = useState(true)
     const [clickedSale, setClickedSale] = useState(false)
@@ -14,23 +17,29 @@ const Products = () => {
 
     const [showProp, setShowProp] = useState(dataProp.slice(0, 3))
     
+    ///filter to ProductPage
+    const [purpose, setPurpose] = useState("Venda")
 
     const clickHandler = (e) => {
         if (e.target.innerText !== "Todos") {
             setClickedAll(false)
+            setPurpose("Venda")
         }
         if (e.target.innerText === "Venda") {
             setClickedSale(true)
             setClickedRent(false)
             setClickedTemp(false)
+            setPurpose("Venda")
         } else if (e.target.innerText ==="Aluguel") {
             setClickedRent(true)
             setClickedSale(false)
             setClickedTemp(false)
+            setPurpose("Aluguel")
         } else if (e.target.innerText === "Temporada") {
             setClickedTemp(true)
             setClickedRent(false)
             setClickedSale(false)
+            setPurpose("Temporada")
         } else {
             setClickedAll(true)
             setClickedRent(false)
@@ -89,6 +98,11 @@ const Products = () => {
             <Link 
                 className='btn'
                 to='/imoveis'
+                state={{
+                    purpose: {purpose},
+                    type: {type},
+                    zone: {zone},
+                  }}
             >
                 Mostrar
             </Link>

@@ -10,6 +10,10 @@ import './Navbar.css'
 
 const Navbar = ({fullNav}) => {
 
+    const purpose = "Venda"
+    const type = "Todos"
+    const zone = "Todos"
+
     const [burger, setBurger] = useState(false)
     
     const burgerClick = () => {
@@ -60,6 +64,11 @@ const Navbar = ({fullNav}) => {
                     <li className="bold"       
                         ><Link 
                             to='/imoveis'
+                            state={{
+                                purpose: {purpose},
+                                type: {type},
+                                zone: {zone},
+                              }}
                             onClick={burgerClick}
                             >Imóveis
                         </Link>
