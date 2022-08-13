@@ -1,9 +1,8 @@
 import './PropertyItem.css'
 import ModalGallery from '../modalGallery/ModalGallery'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const PropertyItem = ({
-    id,
     address,
     price,
     zone,
@@ -13,13 +12,11 @@ const PropertyItem = ({
     area,
     description,
     purpose,
-    featured,
     photo_main,
     photos,
 }) => {
 
     const [modalActive, setModalActive] = useState(false)
-    const [active, setActive] = useState(false)
 
     const clickHandler = () => {
         setModalActive(true)
@@ -66,11 +63,11 @@ const PropertyItem = ({
         </div>
       </div>
       <div className="container">
-        {modalActive ? <ModalGallery 
-            active={() => setActive(true)} 
+        <ModalGallery 
+            active={modalActive} 
             setActive={setModalActive}
             photosArr={[...photos, photo_main]} 
-        /> : ""}
+        />
       </div>
     </div>
     
