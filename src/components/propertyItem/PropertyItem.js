@@ -19,6 +19,7 @@ const PropertyItem = ({
 }) => {
 
     const [modalActive, setModalActive] = useState(false)
+    const [active, setActive] = useState(false)
 
     const clickHandler = () => {
         setModalActive(true)
@@ -65,11 +66,11 @@ const PropertyItem = ({
         </div>
       </div>
       <div className="container">
-        <ModalGallery 
-            active={modalActive} 
+        {modalActive ? <ModalGallery 
+            active={() => setActive(true)} 
             setActive={setModalActive}
             photosArr={[...photos, photo_main]} 
-        />
+        /> : ""}
       </div>
     </div>
     
