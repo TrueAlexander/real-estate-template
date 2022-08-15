@@ -4,8 +4,11 @@ import {Link} from 'react-router-dom'
 import { useState } from 'react'
 
 import './Home.css'
+import 'animate.css'
 
 const Home = () => {
+
+    const [isOpen, setIsOpen] = useState(false)
 
     const [purpose, setPurpose] = useState("Venda")
     const [type, setType] = useState("Todos")
@@ -19,8 +22,57 @@ const Home = () => {
             <div className='content'>
                 <h1>Busque seu lugar na Cidade Maravilhosa</h1>
                 <p className='search-text'> Transformando Sonhos em Realidade </p>
-                <form className='search'>
-                    <div className='radio'> 
+                <div 
+                    className='search animate__animated animate__fadeIn'
+                    onChange={() => setIsOpen(true)}
+                >
+                    <div className='search-row'>
+                        <div>
+                            <select 
+                                name="product" 
+                                onChange={selectTypeChange}
+                            >
+                                <option value="Todos">Procuro..</option>
+                                <option value="Todos">Todos</option>
+                                <option value="Apartamento">Apartamento</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Kitnet">Kitnet</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select 
+                                name="zone"
+                                onChange={selectZoneChange} 
+                            >
+                                <option value="Todos">No bairro..</option>
+                                <option value="Todos">Todos</option>
+                                <option value="Lapa">Lapa</option>
+                                <option value="Maracanã">Maracanã</option>
+                                <option value="Botafogo">Botafogo</option>
+                                <option value="Flamengo">Flamengo</option>
+                                <option value="Santa Teresa">Santa Teresa</option>
+                            </select>
+                        </div>                  
+                        <Link 
+                            to='/imoveis' 
+                            className='btn'
+                            state={{
+                                purpose: {purpose},
+                                type: {type},
+                                zone: {zone},
+                            }}
+                        >
+                            <AiOutlineSearch className='icon'/>
+                        </Link>
+                    </div>
+                </div>
+                {isOpen ? <div className='search radio animate__animated animate__slideInDown'> 
+                        <input 
+                            type='radio'
+                            checked={purpose === "Venda"}
+                            onChange={() => setPurpose("Venda")} 
+                        />
+                        <label>Todos</label>
                         <input 
                             type='radio'
                             checked={purpose === "Venda"}
@@ -39,45 +91,7 @@ const Home = () => {
                             onChange={() => setPurpose("Temporada")}
                         />
                         <label>Temporada</label>
-                    </div>
-                    <div>
-                        <select 
-                            name="product" 
-                            onChange={selectTypeChange}
-                        >
-                            <option value="Todos">Procuro..</option>
-                            <option value="Todos">Todos</option>
-                            <option value="Apartamento">Apartamento</option>
-                            <option value="Casa">Casa</option>
-                            <option value="Kitnet">Kitnet</option>
-                        </select>
-                    </div>
-                    <div>
-                        <select 
-                            name="zone"
-                            onChange={selectZoneChange} 
-                        >
-                            <option value="Todos">No bairro..</option>
-                            <option value="Todos">Todos</option>
-                            <option value="Lapa">Lapa</option>
-                            <option value="Maracanã">Maracanã</option>
-                            <option value="Botafogo">Botafogo</option>
-                            <option value="Flamengo">Flamengo</option>
-                            <option value="Santa Teresa">Santa Teresa</option>
-                        </select>
-                    </div>
-                    <Link 
-                        to='/imoveis' 
-                        className='btn'
-                        state={{
-                            purpose: {purpose},
-                            type: {type},
-                            zone: {zone},
-                          }}
-                    >
-                        <AiOutlineSearch className='icon'/>
-                    </Link>
-                </form>
+                    </div> : ''}
             </div>
         </div>
     )

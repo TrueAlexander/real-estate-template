@@ -2,22 +2,18 @@ import './ModalGallery.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation} from 'swiper'
 import { useEffect } from 'react'
-import useIsMounted from '../../utils/useIsMounted'
 
 
 
 const ModalGallery = ({active, setActive, photosArr}) => {
-
-  
-  const isMounted = useIsMounted()
   
   useEffect(() => {
     active ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
   }, [active])
 
   return (
-    // <div className={`navigation ${isMounted ? 'mounted' : ''}`}>
-      <div className={isMounted && active ? "modal active" : "modal"} onClick={() => setActive(false)} >
+
+      <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)} >
         <div className={active ? "modal-content active" : "modal-content"} onClick={e => e.stopPropagation()} >
           <h2>Fotos do imóvel</h2>
           <Swiper
@@ -44,7 +40,6 @@ const ModalGallery = ({active, setActive, photosArr}) => {
           <button className='btn' onClick={() => setActive(false)}>Fechar</button>
         </div> 
       </div>
-    // {/* </div> */}
   )
 }
 

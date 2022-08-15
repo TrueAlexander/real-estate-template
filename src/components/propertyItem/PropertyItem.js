@@ -17,7 +17,6 @@ const PropertyItem = ({
     photos,
 }) => {
     const isMounted = useIsMounted()
-    console.log(isMounted.current);
     const [modalActive, setModalActive] = useState(false)
 
     const clickHandler = () => {
@@ -71,10 +70,7 @@ const PropertyItem = ({
             photosArr={[...photos, photo_main]} 
         /> : ""}
       </div>
-    </div>
-    
-
-    
+    </div>  
   )
 }
 
