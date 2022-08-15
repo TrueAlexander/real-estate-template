@@ -13,7 +13,6 @@ const ModalGallery = ({active, setActive, photosArr}) => {
   
   useEffect(() => {
     active ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''
-    console.log(active)
   }, [active])
 
   return (

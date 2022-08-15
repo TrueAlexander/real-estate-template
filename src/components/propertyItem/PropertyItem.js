@@ -1,6 +1,7 @@
 import './PropertyItem.css'
 import ModalGallery from '../modalGallery/ModalGallery'
 import { useEffect, useState } from 'react'
+import useIsMounted from '../../utils/useIsMounted'
 
 const PropertyItem = ({
     address,
@@ -15,7 +16,8 @@ const PropertyItem = ({
     photo_main,
     photos,
 }) => {
-
+    const isMounted = useIsMounted()
+    console.log(isMounted.current);
     const [modalActive, setModalActive] = useState(false)
 
     const clickHandler = () => {
@@ -63,11 +65,11 @@ const PropertyItem = ({
         </div>
       </div>
       <div className="container">
-        <ModalGallery 
+        {isMounted.current ? <ModalGallery 
             active={modalActive} 
             setActive={setModalActive}
             photosArr={[...photos, photo_main]} 
-        />
+        /> : ""}
       </div>
     </div>
     
