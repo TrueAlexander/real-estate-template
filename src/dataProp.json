@@ -18,6 +18,7 @@
     "area": 8.666,
     "description": "Uma bela casa moderna na cidade com uma piscina em tamanho real. Casa espaçosa e luxuosa localizada em Botafogo, RJ. Incluindo sala de mídia, academia de ginástica e sauna embutida.",
     "purpose": "Venda",
+    "code": "12345",
     "featured": false
   },
   {
@@ -31,13 +32,14 @@
       "assets/id_1/photo4.jpg"
     ],
     "zone": "Flamengo",
-    "price": "1 545 632",
+    "price": "5 632",
     "address": "R. Almirante Tamandaré, RJ",
     "rooms_num": 8,
     "bath_num": 5,
     "area": 6.888,
     "description": "Casa totalmente mobiliada. Sala com três ambientes, 04 suites, escritório, cozinha espaçosa, dependencias, piscina. Casa luxuosa localizada em endereço nobre, RJ.",
     "purpose": "Aluguel",
+    "code": "32424",
     "featured": true
   },
   {
@@ -51,13 +53,14 @@
       "assets/id_2/photo4.jpg"
     ],
     "zone": "Maracanã",
-    "price": "852 343",
+    "price": "3 343",
     "address": "R. Claudia da Rocha, Rio de Janeiro, RJ",
     "rooms_num": 3,
     "bath_num": 2,
-    "area": 1.888,
+    "area": 40,
     "description": "Apartamento espaçosa e luxuoso localizada no Maracanã, RJ. Três quartos, sendo duas suítes, dependencias completas, varandão. Portaria 24 horas. Rua tranquila.Condomínio com piscina, sauna, salão de festas e salão de jogos",
     "purpose": "Aluguel",
+    "code": "54321",
     "featured": false
   },
   {
@@ -71,13 +74,14 @@
       "assets/id_3/photo4.jpg"
     ],
     "zone": "Lapa",
-    "price": "666 666",
+    "price": "666 000",
     "address": "Av. Aleksander Humboldt, Rio de Janeiro, RJ",
     "rooms_num": 2,
     "bath_num": 1,
-    "area": 2.888,
+    "area": 35,
     "description": "Apartamento compacto, localizado na Lapa, RJ. Rua residencial, farta condução para zona sul e norte. Apartamento com dois quartos, sala, cozinha e banheiro",
     "purpose": "Venda",
+    "code": "33345",
     "featured": true
   },
   {
@@ -91,13 +95,14 @@
       "assets/id_2/photo4.jpg"
     ],
     "zone": "Santa Teresa",
-    "price": "5 000",
+    "price": "2 000",
     "address": "R. Presidente Gorbachev, Rio de Janeiro, RJ",
     "rooms_num": 1,
     "bath_num": 1,
-    "area": 78,
+    "area": 30,
     "description": "Apartamento pequeno localizada no Centro do Rio, RJ. Ideal para estudantes, um quarto, sala, boa cozinha e banheiro. Condomínio barato, proximo ao centro comercial",
     "purpose": "Temporada",
+    "code": "12121",
     "featured": false
   },
   {
@@ -111,13 +116,14 @@
       "assets/id_1/photo4.jpg"
     ],
     "zone": "Flamengo",
-    "price": "1 111",
+    "price": "1 900",
     "address": "R. Galina Mendes, Rio de Janeiro, RJ",
     "rooms_num": 1,
     "bath_num": 1,
     "area": 40,
     "description": "Kitnet com projeto de arquitetura. Pequena porém funcional. Sala/quarto, cozinha e banheiro, localização perfeita, supermercados, padarias, muito perto do metro, RJ.",
     "purpose": "Temporada",
+    "code": "34512",
     "featured": false
   },
   {
@@ -131,13 +137,14 @@
       "assets/id_4/photo4.jpg"
     ],
     "zone": "Santa Teresa",
-    "price": "555",
+    "price": "1 555",
     "address": "R. Olga Bonfilho, Rio de Janeiro, RJ",
     "rooms_num": 1,
     "bath_num": 1,
     "area": 33,
     "description": "Kitnet com excelente vista do Rio de Janeiro. Um cômodo amplo com itens de cozinha e banheiro, ideal para temporada RJ.",
     "purpose": "Temporada",
+    "code": "33345",
     "featured": false
   },
   {
@@ -151,13 +158,14 @@
       "assets/id_5/photo4.jpg"
     ],
     "zone": "Santa Teresa",
-    "price": "555",
+    "price": "2 500 555",
     "address": "R. Vladimir Oliveira, Rio de Janeiro, RJ",
-    "rooms_num": 3,
-    "bath_num": 1,
+    "rooms_num": 8,
+    "bath_num": 8,
     "area": 33,
     "description": "Casa para investimento. Oito ambientes, ideal para empresas ou casa de festas. Casa espaçosa localizada em Santa Teresa, RJ.",
     "purpose": "Venda",
+    "code": "45345",
     "featured": false
   },
   {
@@ -171,13 +179,14 @@
       "assets/id_6/photo4.jpg"
     ],
     "zone": "Lapa",
-    "price": "555",
+    "price": "1 555",
     "address": "R. Lucine Marina Souza, Rio de Janeiro, RJ",
     "rooms_num": 1,
     "bath_num": 1,
     "area": 33,
     "description": "Apartamento. Uma belo apartamento pequeno e moderno na Lapa. Totalmente equipado e mobiliado, Condominio barato, aceita Pet, RJ.",
     "purpose": "Aluguel",
+    "code": "54345",
     "featured": false
   }
 ]

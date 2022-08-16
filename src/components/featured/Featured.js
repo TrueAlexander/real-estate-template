@@ -23,7 +23,8 @@ const Featured = () => {
                         purpose={item.purpose}
                         featured={item.featured}
                         photo_main={item.photo_main}
-                        photos={item.photos}  
+                        photos={item.photos}
+                        code={item.code}  
                     /> 
                 : ''
         })

@@ -15,6 +15,7 @@ const PropertyItem = ({
     purpose,
     photo_main,
     photos,
+    code
 }) => {
     const isMounted = useIsMounted()
     const [modalActive, setModalActive] = useState(false)
@@ -55,12 +56,15 @@ const PropertyItem = ({
                     <div className='info'>
                         <p className='bold'>Bairro:</p><p className='bold blue'>{zone}</p>
                     </div>
+                    <div className='info'>
+                        <p className='bold'>Código:</p><p className='bold blue'>#{code}</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div className='span-2 right-img-details'>
             <p>{description}</p>
-            <button className='btn'><a href="https://wa.me/5521967261434">Fale conosco</a></button>
+            <button className='btn'><a href={"https://wa.me/5521967261434?text=" + "Gostaria de maiores informações sobre o imóvel código" + " " + code}>Fale conosco</a></button>
         </div>
       </div>
       <div className="container">
