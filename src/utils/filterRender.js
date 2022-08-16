@@ -11,7 +11,7 @@ const filterRender = (purpose, type, zone) => {
         && (item.zone === zone || zone === "Todos")) return item
   })
   //rendering results
-  return filteredArr.map((item => {
+  return filteredArr.length > 0 ? filteredArr.map((item => {
     return <PropertyItem 
               key={item.id}
               address={item.address}
@@ -27,7 +27,10 @@ const filterRender = (purpose, type, zone) => {
               photo_main={item.photo_main}
               photos={item.photos}  
             />
-  }))
+  })) : <>
+          <h2 className='property-note'>Opa!..  Não foi encontrado ou disponivel atualmente o solicitado!</h2>
+          <h2 className='property-note blue'>Por favor troque os parametros de busca!</h2>
+        </>
 }
 
 export default filterRender

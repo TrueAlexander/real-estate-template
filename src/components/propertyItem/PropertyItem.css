@@ -74,6 +74,12 @@
     color: white;
 }
 
+.property-note {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.9rem;
+}
+
 @media screen and (max-width: 1024px) {
     .property .container {
         --num-cols: 2;
@@ -125,6 +131,9 @@
     text-align: end;
   
  }
+ .property-note {
+    font-size: 1.3rem;
+}
 }
 
 
