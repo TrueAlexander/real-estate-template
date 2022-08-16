@@ -85,11 +85,20 @@ const ProductHead = ({dataToRender}) => {
             Temporada
           </p>
         </div>
-        <h1 
-          className={animated ? "animate__animated animate__fadeIn animate__slow" : ""} 
-          key={[typeSelected, purposeSelected]} 
-        >{typeSelected} <span><small className=''>{purposeSelected === "Venda" ? "à " : "para "}</small>{purposeSelected}</span>
-        </h1>
+        {purposeSelected === typeSelected 
+        ? <h1
+            className={animated ? "animate__animated animate__fadeIn animate__slow" : ""} 
+            key={[typeSelected, purposeSelected]} 
+          >
+            Todos <span className='blue'>Imóveis</span>
+          </h1>
+        : <h1
+            className={animated ? "animate__animated animate__fadeIn animate__slow" : ""} 
+            key={[typeSelected, purposeSelected]} 
+          >
+            {typeSelected} <span><small className=''>{purposeSelected === "Venda" ? "à " : "para "}</small>{purposeSelected}</span>
+          </h1> 
+        }
         <div className="productHead-row">
           <h3>Escolha o bairro:</h3>
           <select 

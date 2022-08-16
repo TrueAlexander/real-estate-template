@@ -1,5 +1,6 @@
 import dataProp from '../dataProp.json'
 import PropertyItem from '../components/propertyItem/PropertyItem'
+import 'animate.css'
 
 const filterRender = (purpose, type, zone) => {
   
@@ -27,10 +28,10 @@ const filterRender = (purpose, type, zone) => {
               photo_main={item.photo_main}
               photos={item.photos}  
             />
-  })) : <>
+  })) : <div className="animate__animated animate__fadeIn animate__slow">
           <h2 className='property-note'>Opa!..  Não foi encontrado ou disponivel atualmente o solicitado!</h2>
           <h2 className='property-note blue'>Por favor troque os parametros de busca!</h2>
-        </>
+        </div>
 }
 
 export default filterRender
