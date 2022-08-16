@@ -10,7 +10,7 @@ const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
-    const [purpose, setPurpose] = useState("Venda")
+    const [purpose, setPurpose] = useState("Todos")
     const [type, setType] = useState("Todos")
     const [zone, setZone] = useState("Todos")
 
@@ -66,31 +66,45 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                {isOpen ? <div className='search radio animate__animated animate__slideInDown'> 
-                        <input 
-                            type='radio'
-                            checked={purpose === "Venda"}
-                            onChange={() => setPurpose("Venda")} 
-                        />
-                        <label>Todos</label>
-                        <input 
-                            type='radio'
-                            checked={purpose === "Venda"}
-                            onChange={() => setPurpose("Venda")} 
-                        />
-                        <label>Venda</label>
-                        <input 
-                            type='radio'
-                            checked={purpose === "Aluguel"}
-                            onChange={() => setPurpose("Aluguel")}
+                {isOpen ? <div className='search radio animate__animated animate__slideInDown'>
+                    <div>
+                        <div>
+                            <input 
+                                type='radio'
+                                checked={purpose === "Todos"}
+                                onChange={() => setPurpose("Todos")} 
                             />
-                        <label>Aluguel</label>
-                        <input
-                            type='radio'
-                            checked={purpose === "Temporada"}
-                            onChange={() => setPurpose("Temporada")}
-                        />
-                        <label>Temporada</label>
+                            <label>Todos</label>
+                        </div>
+                        <div>
+                            <input 
+                                type='radio'
+                                checked={purpose === "Venda"}
+                                onChange={() => setPurpose("Venda")} 
+                            />
+                            <label>Venda</label>
+                        </div>  
+                    </div> 
+                    <div>
+                        <div>
+                            <input 
+                                type='radio'
+                                checked={purpose === "Aluguel"}
+                                onChange={() => setPurpose("Aluguel")}
+                                />
+                            <label>Aluguel</label>
+                        </div>
+                        <div>
+                            <input
+                                type='radio'
+                                checked={purpose === "Temporada"}
+                                onChange={() => setPurpose("Temporada")}
+                            />
+                            <label>Temporada</label>
+                        </div>
+                    </div>
+                        
+                        
                     </div> : ''}
             </div>
         </div>

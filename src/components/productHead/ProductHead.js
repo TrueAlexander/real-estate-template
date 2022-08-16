@@ -94,6 +94,12 @@ const ProductHead = () => {
         </div>
         <div className="toggle-product">
           <p 
+            className={purposeSelected === "Todos" ? 'link-product blue active' : 'link-product blue'}
+            onClick={changePurposeHandler}
+          >
+            Todos
+          </p>
+          <p 
             className={purposeSelected === "Venda" ? 'link-product blue active' : 'link-product blue'}
             onClick={changePurposeHandler}
           >
