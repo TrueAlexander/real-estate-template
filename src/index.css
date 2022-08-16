@@ -58,6 +58,10 @@ body {
   color:#5651e5;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .scrollLink:hover {
   cursor: pointer;
 }

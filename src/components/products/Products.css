@@ -13,15 +13,21 @@
 
 .products > div p {
     margin: 1rem 2rem;
-    font-size: 1.2rem;   
+    font-size: 1.2rem;
+    transition: 0.6s ease;
+    cursor: pointer; 
+  
+   
 }
 
 .products > div p:hover {
-    cursor: pointer;   
+      
 }
 
-.bold {
+.products > div p.bold {
     font-weight: 700;
+    transition: 0.6s ease;
+    cursor: default; 
 }
 
 .products .container {

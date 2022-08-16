@@ -10,7 +10,7 @@ import './Navbar.css'
 
 const Navbar = ({fullNav}) => {
 
-    const purpose = "Venda"
+    const purpose = "Todos"
     const type = "Todos"
     const zone = "Todos"
 

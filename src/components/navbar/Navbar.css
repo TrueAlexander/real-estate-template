@@ -102,6 +102,9 @@
        font-size: 1.6rem;
     }
 
+    .navbar .nav-menu {
+        top: 70px;
+    }
     .navbar .nav-menu li {
         padding: 0.5rem;
     }

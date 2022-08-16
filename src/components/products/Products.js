@@ -4,6 +4,7 @@ import { useState } from 'react'
 import dataProp from './../../dataProp.json'
 
 import './Products.css'
+import 'animate.css'
 
 const Products = () => {
 
@@ -18,12 +19,12 @@ const Products = () => {
     const [showProp, setShowProp] = useState(dataProp.slice(0, 3))
     
     ///filter to ProductPage
-    const [purpose, setPurpose] = useState("Venda")
+    const [purpose, setPurpose] = useState("Todos")
 
     const clickHandler = (e) => {
         if (e.target.innerText !== "Todos") {
             setClickedAll(false)
-            setPurpose("Venda")
+            setPurpose("Todos")
         }
         if (e.target.innerText === "Venda") {
             setClickedSale(true)
@@ -53,8 +54,7 @@ const Products = () => {
            showChoosed = dataProp.filter((item) => (item.purpose === e.target.innerText))
         } else showChoosed = dataProp
         
-        setShowProp(showChoosed.slice(0, 3))
-         
+        setShowProp(showChoosed.slice(0, 3))     
     }
 
     const fillProducts = (arr) => {
@@ -62,7 +62,8 @@ const Products = () => {
         return arr.map((item) => {
         return <img 
                     src={item.photo_main} 
-                    alt='propiedade' 
+                    alt='propiedade'
+                    className='animate__animated animate__fadeIn'
                     key={item.id}/>
         }) 
     } 

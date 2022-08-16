@@ -3,6 +3,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { useLocation } from 'react-router-dom'
 import {useState} from 'react'
 import 'animate.css'
+import filter from '../../utils/filter'
 
 const ProductHead = () => {
 
@@ -26,33 +27,6 @@ const ProductHead = () => {
     setAnimated(true)
   }
 
-  // const fillTypes = () => {
-
-  //   const allProp = JSON.parse(localStorage.getItem("allProp")) 
-    
-  //   const arrProp = allProp.map((item) => {
-  //     let res = []
-  //     for (let i in item) res.push(item[i])
-  //     return res
-  //   })
-
-  //   const arrTypes = (array) => {
-  //     let arrRes =[]
-  //     for (let j = 0; j < array.length; j++) arrRes.push(array[j][1])
-  //     return arrRes
-  //   }
-  //   const arrAllTypes = arrTypes(arrProp)
-  //   const uniqueTypes = arrAllTypes.filter((x, i, a) => a.indexOf(x) == i)
-    
-  //   const types = ["Todos", ...uniqueTypes]
-   
-  //   return types.map((item, index) => {
-  //     return <div className='link-product' key={index}>
-  //               <p>{item}</p>
-  //             </div>
-  //   })
-  // }
-
   const dataToRender = () => {
     
     const dataFilter = {
@@ -60,7 +34,9 @@ const ProductHead = () => {
       purpose: purposeSelected,
       zone: zoneSelected
     }
-    console.log(dataFilter)
+   
+    //an array to render filtered properties from Product Head
+    const arrProductHead = filter(dataFilter.purpose, dataFilter.type, dataFilter.zone)
   }
 
   return (
@@ -118,7 +94,11 @@ const ProductHead = () => {
             Temporada
           </p>
         </div>
-        <h1 className={animated ? "animate__animated animate__fadeIn animate__slow" : ""} key={[typeSelected, purposeSelected]} >{typeSelected} <span><small className=''>{purposeSelected === "Venda" ? "à " : "para "}</small>{purposeSelected}</span></h1>
+        <h1 
+          className={animated ? "animate__animated animate__fadeIn animate__slow" : ""} 
+          key={[typeSelected, purposeSelected]} 
+        >{typeSelected} <span><small className=''>{purposeSelected === "Venda" ? "à " : "para "}</small>{purposeSelected}</span>
+        </h1>
         <div className="productHead-row">
           <h3>Escolha o bairro:</h3>
           <select 
