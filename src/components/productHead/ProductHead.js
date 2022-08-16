@@ -3,9 +3,8 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { useLocation } from 'react-router-dom'
 import {useState} from 'react'
 import 'animate.css'
-import filter from '../../utils/filter'
 
-const ProductHead = () => {
+const ProductHead = ({dataToRender}) => {
 
   const location = useLocation()
   const purpose = location.state.purpose.purpose
@@ -27,16 +26,8 @@ const ProductHead = () => {
     setAnimated(true)
   }
 
-  const dataToRender = () => {
-    
-    const dataFilter = {
-      type: typeSelected,
-      purpose: purposeSelected,
-      zone: zoneSelected
-    }
-   
-    //an array to render filtered properties from Product Head
-    const arrProductHead = filter(dataFilter.purpose, dataFilter.type, dataFilter.zone)
+  const clickHandler = () => {
+    dataToRender(purposeSelected, typeSelected, zoneSelected)
   }
 
   return (
@@ -115,7 +106,7 @@ const ProductHead = () => {
           </select>
           <button 
             className='btn'
-            onClick={dataToRender}
+            onClick={clickHandler}
           >
             <AiOutlineSearch className='icon'/></button>
         </div>

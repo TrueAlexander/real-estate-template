@@ -1,9 +1,7 @@
-import React from 'react'
-import PropertyItem from '../components/propertyItem/PropertyItem'
+import React, { useState } from 'react'
 import ProductHead from '../components/productHead/ProductHead'
 import Navbar from '../components/navbar/Navbar'
-import dataProp from '../dataProp.json'
-import filter from '../utils/filter'
+import filterRender from '../utils/filterRender'
 import { useLocation } from 'react-router-dom'
 
 
@@ -15,40 +13,24 @@ const ProductPage = () => {
   const typeMainPage = location.state.type.type
   const purposeMainPage = location.state.purpose.purpose
   const zoneMainPage = location.state.zone.zone
-  const arrMainPage = filter(purposeMainPage, typeMainPage, zoneMainPage)
-  console.log(arrMainPage)
 
-
+  const [purposeRender, setPurposeRender] = useState(purposeMainPage)
+  const [typeRender, setTypeRender] = useState(typeMainPage)
+  const [zoneRender, setZoneRender] = useState(zoneMainPage)
 
   //get request from productHead
-
-
-
-  const properties = (arr) => {
-    
-    return arr.map((item => {
-      return <PropertyItem 
-                key={item.id}
-                address={item.address}
-                zone={item.zone}
-                price={item.price}
-                type={item.type}
-                rooms_num={item.rooms_num}
-                bath_num={item.bath_num}
-                area={item.area} 
-                description={item.description}
-                purpose={item.purpose}
-                featured={item.featured}
-                photo_main={item.photo_main}
-                photos={item.photos}  
-              />
-    }))
+  const dataToRender = (purposeSelected, typeSelected, zoneSelected) => {
+    setPurposeRender(purposeSelected)
+    setTypeRender(typeSelected)
+    setZoneRender(zoneSelected)
   }
+
   return (
     <>
       <Navbar fullNav={false}/>
-      <ProductHead />
-      {properties(arrMainPage)}
+      <ProductHead dataToRender={dataToRender}/>
+      {filterRender(purposeRender, typeRender, zoneRender)}
+      
     </>
   )
 }

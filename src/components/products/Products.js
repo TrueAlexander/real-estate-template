@@ -63,7 +63,7 @@ const Products = () => {
         return <img 
                     src={item.photo_main} 
                     alt='propiedade'
-                    className='animate__animated animate__fadeIn'
+                    className='animate__animated animate__fadeIn animate__slow'
                     key={item.id}/>
         }) 
     } 
