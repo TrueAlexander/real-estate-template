@@ -2,7 +2,6 @@ import './PropertyItem.css'
 import ModalGallery from '../modalGallery/ModalGallery'
 import { useState } from 'react'
 import useIsMounted from '../../utils/useIsMounted'
-import 'animate.css'
 
 const PropertyItem = ({
     address,
@@ -25,7 +24,7 @@ const PropertyItem = ({
     }
 
   return (
-    <div className="property animate__animated animate__fadeIn animate__slow">
+    <div className="property">
       <div className='container'>
         <img className='span-3 image-grid-row-2' src={photo_main} alt='' onClick={clickHandler} />
         {photos.map((item, index) => {

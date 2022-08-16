@@ -3,6 +3,7 @@ import ProductHead from '../components/productHead/ProductHead'
 import Navbar from '../components/navbar/Navbar'
 import filterRender from '../utils/filterRender'
 import { useLocation } from 'react-router-dom'
+import 'animate.css'
 
 
 const ProductPage = () => {
@@ -29,8 +30,9 @@ const ProductPage = () => {
     <>
       <Navbar fullNav={false}/>
       <ProductHead dataToRender={dataToRender}/>
-      {filterRender(purposeRender, typeRender, zoneRender)}
-      
+      <div className="animate__animated animate__fadeIn animate__slow" key={filterRender(purposeRender, typeRender, zoneRender)}>
+        {filterRender(purposeRender, typeRender, zoneRender)}
+      </div>   
     </>
   )
 }
