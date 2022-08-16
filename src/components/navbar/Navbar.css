@@ -4,7 +4,9 @@
     top: 0;
     left: 0;
     background-color: #fff;
-    border-bottom: 1px solid #eee;   
+    border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 102;
 }
 
 .navbar .container {

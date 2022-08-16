@@ -1,10 +1,12 @@
 .home {
     background-color: rgba(0,0,0,.5);
     color: #fff;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     margin-bottom: 4rem;
+    position: relative;
+    top: -90px;
 }
 
 .home:before {
@@ -122,7 +124,7 @@
 
 @media screen and (max-width: 940px) {
     .home {
-        height: 90vh;
+        /* height: 90vh; */
     }
 
     .home h1 {
@@ -136,7 +138,7 @@
 
 @media screen and (max-width:650px) {
     .home {
-        height: 90vh;
+        /* height: 90vh; */
     }
 
     .home h1 {
@@ -174,7 +176,7 @@
     }
     
     .search.radio label {
-       padding: 0 0 0 0;
+       padding: 0 0 0 20px;
        line-height: 2.5rem;
     }   
 }
