@@ -26,10 +26,11 @@ const PropertyItem = ({
 
   return (
     <div className="property">
+    
       <div className='container'>
         <img className='span-3 image-grid-row-2' src={photo_main} alt='' onClick={clickHandler} />
         {photos.map((item, index) => {
-            return <img key={index} src={item} alt='' onClick={clickHandler} /> 
+            return <img key={index} src={item} alt='' onClick={clickHandler} />
         })}
         <div className='span-3 img-details'>
             <div className='top'>
