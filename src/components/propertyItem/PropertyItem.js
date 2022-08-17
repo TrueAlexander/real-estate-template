@@ -52,7 +52,7 @@ const PropertyItem = ({
                     </div>
                 <div>
                     <div className='info'>
-                        <p className='bold'>Área total:</p><p>{area}</p>
+                        <p className='bold'>Área:</p><p>{area}</p>
                     </div>
                     <div className='info'>
                         <p className='bold'>Bairro:</p><p className='bold blue'>{zone}</p>
