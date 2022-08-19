@@ -87,12 +87,12 @@
   {
     "id": 4,
     "type": "Apartamento",
-    "photo_main": "assets/id_2/photo_main.jpg",
+    "photo_main": "assets/id_4/photo_main.jpg",
     "photos": [
-      "assets/id_2/photo1.jpg", 
-      "assets/id_2/photo2.jpg", 
-      "assets/id_2/photo3.jpg",
-      "assets/id_2/photo4.jpg"
+      "assets/id_4/photo1.jpg", 
+      "assets/id_4/photo2.jpg", 
+      "assets/id_4/photo3.jpg",
+      "assets/id_4/photo4.jpg"
     ],
     "zone": "Santa Teresa",
     "price": "2 000",
@@ -108,12 +108,12 @@
   {
     "id": 5,
     "type": "Kitnet",
-    "photo_main": "assets/id_1/photo_main.jpg",
+    "photo_main": "assets/id_5/photo_main.jpg",
     "photos": [
-      "assets/id_1/photo1.jpg", 
-      "assets/id_1/photo2.jpg", 
-      "assets/id_1/photo3.jpg",
-      "assets/id_1/photo4.jpg"
+      "assets/id_5/photo1.jpg", 
+      "assets/id_5/photo2.jpg", 
+      "assets/id_5/photo3.jpg",
+      "assets/id_5/photo4.jpg"
     ],
     "zone": "Flamengo",
     "price": "1 900",
@@ -129,12 +129,12 @@
   {
     "id": 6,
     "type": "Kitnet",
-    "photo_main": "assets/id_4/photo_main.jpg",
+    "photo_main": "assets/id_7/photo_main.jpg",
     "photos": [
-      "assets/id_4/photo1.jpg", 
-      "assets/id_4/photo2.jpg", 
-      "assets/id_4/photo3.jpg",
-      "assets/id_4/photo4.jpg"
+      "assets/id_7/photo1.jpg", 
+      "assets/id_7/photo2.jpg", 
+      "assets/id_7/photo3.jpg",
+      "assets/id_7/photo4.jpg"
     ],
     "zone": "Santa Teresa",
     "price": "1 555",
@@ -150,12 +150,12 @@
   {
     "id": 7,
     "type": "Casa",
-    "photo_main": "assets/id_5/photo_main.jpg",
+    "photo_main": "assets/id_6/photo_main.jpg",
     "photos": [
-      "assets/id_5/photo1.jpg", 
-      "assets/id_5/photo2.jpg", 
-      "assets/id_5/photo3.jpg",
-      "assets/id_5/photo4.jpg"
+      "assets/id_6/photo1.jpg", 
+      "assets/id_6/photo2.jpg", 
+      "assets/id_6/photo3.jpg",
+      "assets/id_6/photo4.jpg"
     ],
     "zone": "Santa Teresa",
     "price": "2 500 555",
@@ -171,12 +171,12 @@
   {
     "id": 8,
     "type": "Apartamento",
-    "photo_main": "assets/id_6/photo_main.jpg",
+    "photo_main": "assets/id_8/photo_main.jpg",
     "photos": [
-      "assets/id_6/photo1.jpg", 
-      "assets/id_6/photo2.jpg", 
-      "assets/id_6/photo3.jpg",
-      "assets/id_6/photo4.jpg"
+      "assets/id_8/photo1.jpg", 
+      "assets/id_8/photo2.jpg", 
+      "assets/id_8/photo3.jpg",
+      "assets/id_8/photo4.jpg"
     ],
     "zone": "Lapa",
     "price": "1 555",

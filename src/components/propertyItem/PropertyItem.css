@@ -62,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     margin: .8rem 0;
-    width: 60%;
+    width: 60%;  
 }
 
 .property .bold {
@@ -115,25 +115,32 @@
 }
 
 @media screen and (max-width: 600px) {
- .top {
-    flex-direction: column;
-    height: 110px;
- }
 
- .top h2 {
-    width: 100%;
+    .property .container {
+        --gap: 1rem;
+    }
+    .top {
+        flex-direction: column;
+        height: 110px;
+    }
+
+    .top h2 {
+        width: 100%;
+        
+    }
+
+    .top p {
+        display: inline-block;
+        width: 100%;
+        text-align: end;
     
- }
-
- .top p {
-    display: inline-block;
-    width: 100%;
-    text-align: end;
-  
- }
- .property-note {
-    font-size: 1.3rem;
-}
+    }
+    .property-note {
+        font-size: 1.3rem;
+    }
+    .right-img-details {
+        margin-top: 1rem;
+    }
 }
 
 

@@ -50,12 +50,12 @@ const PropertyItem = ({
                         <p className='bold'>Banheiros:</p><p>{bath_num}</p>
                     </div>
                     </div>
-                <div>
-                    <div className='info'>
-                        <p className='bold'>Área:</p><p>{area}</p>
-                    </div>
+                <div>                 
                     <div className='info'>
                         <p className='bold'>Bairro:</p><p className='bold blue'>{zone}</p>
+                    </div>
+                    <div className='info'>
+                        <p className='bold'>Área:</p><p>{area}</p>
                     </div>
                     <div className='info'>
                         <p className='bold'>Código:</p><p className='bold blue'>#{code}</p>
