@@ -16,7 +16,7 @@
     "rooms_num": 5,
     "bath_num": 2,
     "area": 8.666,
-    "description": "Uma bela casa moderna na cidade com uma piscina em tamanho real. Casa espaçosa e luxuosa localizada em Botafogo, RJ. Incluindo sala de mídia, academia de ginástica e sauna embutida.",
+    "description": "Uma bela casa moderna na nossa cidade com uma piscina em tamanho real. Casa espaçosa e luxuosa localizada em Botafogo, RJ. Incluindo sala de mídia, academia de ginástica e sauna embutida.",
     "purpose": "Venda",
     "code": "12345",
     "featured": false
@@ -128,27 +128,6 @@
   },
   {
     "id": 6,
-    "type": "Kitnet",
-    "photo_main": "assets/id_7/photo_main.jpg",
-    "photos": [
-      "assets/id_7/photo1.jpg", 
-      "assets/id_7/photo2.jpg", 
-      "assets/id_7/photo3.jpg",
-      "assets/id_7/photo4.jpg"
-    ],
-    "zone": "Santa Teresa",
-    "price": "1 555",
-    "address": "R. Olga Bonfilho, Rio de Janeiro, RJ",
-    "rooms_num": 1,
-    "bath_num": 1,
-    "area": 33,
-    "description": "Kitnet com excelente vista do Rio de Janeiro. Um cômodo amplo com itens de cozinha e banheiro, ideal para temporadas RJ.",
-    "purpose": "Temporada",
-    "code": "33345",
-    "featured": false
-  },
-  {
-    "id": 7,
     "type": "Casa",
     "photo_main": "assets/id_6/photo_main.jpg",
     "photos": [
@@ -166,6 +145,27 @@
     "description": "Casa para investimento. Oito ambientes, ideal para empresas ou casa de festas. Casa espaçosa localizada em Santa Teresa, RJ.",
     "purpose": "Venda",
     "code": "45345",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "type": "Kitnet",
+    "photo_main": "assets/id_7/photo_main.jpg",
+    "photos": [
+      "assets/id_7/photo1.jpg", 
+      "assets/id_7/photo2.jpg", 
+      "assets/id_7/photo3.jpg",
+      "assets/id_7/photo4.jpg"
+    ],
+    "zone": "Santa Teresa",
+    "price": "1 555",
+    "address": "R. Olga Bonfilho, Rio de Janeiro, RJ",
+    "rooms_num": 1,
+    "bath_num": 1,
+    "area": 33,
+    "description": "Kitnet com excelente vista do Rio de Janeiro. Um cômodo amplo com itens de cozinha e banheiro, ideal para temporadas RJ.",
+    "purpose": "Temporada",
+    "code": "33345",
     "featured": false
   },
   {
