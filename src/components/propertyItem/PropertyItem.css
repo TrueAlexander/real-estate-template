@@ -4,7 +4,7 @@
     --gap: 1.2rem;
     --num-cols: 5;
     --row-height: 250px;
-
+    overflow: hidden;
     padding: 0 1rem;
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
@@ -46,7 +46,6 @@
 }
 
 .property .top {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +82,7 @@
 @media screen and (max-width: 1024px) {
     .property .container {
         --num-cols: 2;
-        --row-height: 200px;
+        --row-height: auto;
         --grap: .5rem;
     }
 
@@ -118,6 +117,10 @@
 
     .property .container {
         --gap: 1rem;
+       
+    }
+    .property .bold {
+        margin-right: 0.5rem;
     }
     .top {
         flex-direction: column;
@@ -142,6 +145,8 @@
         margin-top: 1rem;
     }
 }
+
+
 
 
 

@@ -80,3 +80,9 @@ body {
 .scrollLink:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 0.3rem 1rem;   
+  }
+}
