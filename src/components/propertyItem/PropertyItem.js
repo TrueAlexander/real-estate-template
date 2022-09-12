@@ -72,7 +72,7 @@ const PropertyItem = ({
         {isMounted.current ? <ModalGallery 
             active={modalActive} 
             setActive={setModalActive}
-            photosArr={[...photos, photo_main]} 
+            photosArr={[...photos, photo_main].reverse()} 
         /> : ""}
       </div>
     </div>  

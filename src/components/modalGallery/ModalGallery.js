@@ -31,7 +31,7 @@ const ModalGallery = ({active, setActive, photosArr}) => {
                         <div className="modal-card">
                           <img 
                             src={item} 
-                            alt={"property" + index} 
+                            alt={"property" + index}
                           />
                         </div>
                       </SwiperSlide>

@@ -13,7 +13,6 @@
   transition: 0.5s;
   pointer-events: none;
   text-align: center;
-  z-index: 110;
 }
 
 .modal.active {
@@ -22,16 +21,16 @@
 }
 
 .modal-content {
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   background-color: white;
   transform: scale(0.5);
   transition: 0.4s all;
-  height: 630px;
+  height: auto;
   max-height: 100%;
-  width: 900px; 
+  width: 77vw;
   max-width: 100%;
- 
+  overflow: hidden;
 }
 
 .modal-content.active {
@@ -45,16 +44,22 @@
 }
 
 .modal-slider {
+  height: 38vw;
+  margin-bottom: 10px;
  }
  
 .modal-slide { 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal-slide .modal-card {
-  max-width: 900px;
+  max-width: 100%;
   max-height: 500px;
-  margin: 1rem auto 1rem;
   overflow: hidden;
+
   
 } 
 
@@ -62,7 +67,8 @@
   width: 100%;
   height: 100%;
   object-fit:cover;
-  object-position: center; 
+  object-position: center;
+
 }
 
 .modal-slider .swiper-button-prev,
@@ -78,25 +84,25 @@
   color: white;
 }
 
-@media screen and (max-width:940px) {
+@media screen and (max-width:1080px) {
   .modal-content {
-    height: fit-content;
+    width: 100vw;
+    overflow: auto;
+
   }
-  .modal-slide .modal-card {
-    margin: 0.5rem auto 0rem;
-  
-    
-  } 
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (max-width:940px) and (orientation: landscape) {
-  .modal-content {
+  /* .modal-content {
    height: 100%;
   }
   .modal-slide .modal-card {
     max-width: 540px;
     max-height: 70vh;
     margin: 0.5rem auto 0.5rem;  
-  } 
-
+  }  */
 }

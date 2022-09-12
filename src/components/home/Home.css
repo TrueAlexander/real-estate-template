@@ -3,10 +3,8 @@
     color: #fff;
     height: 100vh;
     width: 100%;
-    position: relative;
     margin-bottom: 4rem;
     position: relative;
-    top: -90px;
 }
 
 .home:before {
