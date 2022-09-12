@@ -1,7 +1,6 @@
 https://real-estate-template-seven.vercel.app/
 
-template para imobiliaria
-
+template for imobiliaria / real-estate
 
 # Getting Started with Create React App
 
