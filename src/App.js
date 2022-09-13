@@ -5,6 +5,7 @@ import MainPage from './pages/MainPage'
 import ProductPage from './pages/ProductPage'
 import WhatsappIcon from './components/whatsappIcon/WhatsappIcon'
 import ScrollToTop from './utils/ScrollToTop'
+import UpArrow from './components/upArrow/UpArrow'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/imoveis' element={<ProductPage/>}/>
         </Routes>
       <WhatsappIcon/>
+      <UpArrow />
       </BrowserRouter>
       <Footer />
     </>
