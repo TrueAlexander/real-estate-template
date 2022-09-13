@@ -5,6 +5,7 @@
     left: 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
+    z-index: 2;
 }
 
 .navbar .container {

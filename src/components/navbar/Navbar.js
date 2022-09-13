@@ -45,7 +45,7 @@ const Navbar = ({fullNav}) => {
     }
 
     return (
-        <div className='navbar'>
+        <div className='navbar' style={fullNav ? {position: "absolute"} : {position: "static"}}>
             <div className='container'>
                 <h1><Link to="./../"><span><BsFillHouseFill />Sasha</span> Imóveis</Link></h1>
                 <ul 
